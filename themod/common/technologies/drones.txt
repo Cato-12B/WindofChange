@@ -1,22 +1,22 @@
 technologies = {
 	
-	Drone1 = {
+	drone1 = {
 
 		enable_equipments = {
-			fighter_equipment_1
+			drone_equipment_1
 		}
 	
 		path = {
-			leads_to_tech = fighter2
+			leads_to_tech = drone2
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 2.5
-		start_year = 1992
+		start_year = 1995
 
 		folder = {
-			name = air_techs_folder
-			position = { x = 0 y = 4 }
+			name = drone_folder
+			position = { x = 1 y = 1 }
 		}
 		
 		categories = {
@@ -26,7 +26,7 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			cv_fighter1
+			cv_drone1
 		}
 		
 		ai_will_do = {
@@ -39,21 +39,26 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1937.1.1"
+				date > "1991.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1938.1.1"
+				date > "1992.1.1"
 			}
 			
 			modifier = {
-				factor = 1.2
-				date > "1939.1.1"
+				factor = 2
+				date > "1993.1.1"
 			}
 			
 			modifier = {
-				factor = 5
-				date > "1940.1.1"
+				factor = 3
+				date > "1994.1.1"
+			}
+
+			modifier = {
+				factor = 4
+				date > "1995.1.1"
 			}
 		}
