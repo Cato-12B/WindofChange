@@ -1,10 +1,10 @@
+
 state={
 	id=430
 	name="STATE_430"
 
 	history={
-		add_core_of = BAN
-		owner = RAJ
+		owner = BAN
 		victory_points = {
 			11929 1 
 		}
@@ -17,15 +17,14 @@ state={
 			}
 
 		}
-		add_core_of = PAK
-		add_core_of = RAJ
+		add_core_of = BAN
 
 	}
 
 	provinces={
-		2843 4162 4616 7078 7124 7179 7662 9935 9991 9993 10035 10389 10416 10443 11911 11929 11968 12010 12423 13208
+		1142 1497 2843 4162 4616 7078 7124 7634 7662 9935 9991 9993 10035 10416 10443 11911 11929 11968 12010 12338 12423 
 	}
-	manpower=31973300
+	manpower=108509678
 	buildings_max_level_factor=1.000
 	state_category=town
 }

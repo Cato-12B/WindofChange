@@ -2,13 +2,12 @@
 state={
 	id=636
 	name="STATE_636"
-	manpower = 180000
+	manpower = 735469
 	
 	state_category = small_island
 
 	history={
-		owner = ENG
-		add_core_of = FIJ
+		owner = FIJ
 		buildings = {
 			infrastructure = 3
 			4286 = {
@@ -19,6 +18,7 @@ state={
 		victory_points = {
 			4286 1 
 		}
+		add_core_of = FIJ
 	}
 	
 	provinces={

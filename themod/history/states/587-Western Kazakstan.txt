@@ -1,22 +1,23 @@
+
 state={
 	id=587
-	name="STATE_587"
+	name="STATE_587" # Ust Urt
+	manpower = 322728
+
+	state_category = large_town
 
 	history={
-		owner = SOV
-		add_core_of = KAZ
+		owner = KAZ
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 5
 		}
-		add_core_of = SOV
-
+		victory_points = {
+			11701 1
+		}
+			add_core_of = KAZ
 	}
 
 	provinces={
-		475 642 1517 3593 4523 4620 7641 10262 11701 12163 12383 13008 
+		475 1517 3593 4523 4620 7641 10262 10406 11701  
 	}
-	manpower=245133
-	buildings_max_level_factor=1.000
-	state_category=rural
 }

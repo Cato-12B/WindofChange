@@ -1,19 +1,20 @@
 state={
 	id=709
 	name="STATE_709"
-	manpower = 126703
+	manpower = 71495
 	
 	state_category = small_island
 	
 	history=
 	{
-		owner = ENG
+		owner = SEY
 		buildings = {
 			infrastructure = 3
 			2188 = {
 				naval_base = 1
 			}
 		}
+		add_core_of = SEY
 	}
 	
 	provinces={

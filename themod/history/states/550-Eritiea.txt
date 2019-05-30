@@ -2,14 +2,13 @@ state=
 {
 	id=550
 	name="STATE_550"
-	manpower = 600600
-	
+	manpower = 3160644
+
 	state_category = rural
-	
+
 	history=
 	{
-		owner = ITA
-		add_core_of = ERI
+		owner = ETH
 		victory_points = {
 			12766 1
 		}

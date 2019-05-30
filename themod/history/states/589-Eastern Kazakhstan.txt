@@ -1,32 +1,21 @@
 state={
 	id=589
 	name="STATE_589"
+	
+	state_category = city 
 
 	history={
-		owner = SOV
+		owner = KAZ
 		add_core_of = KAZ
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
-
-		}
-		add_core_of = SOV
-		1939.1.1 = {
 			buildings = {
-				industrial_complex = 1
-
-			}
-
+			infrastructure = 5
 		}
-		victory_points = {
-			1668 1
-		}
+
 	}
 
 	provinces={
-		1239 1668 4651 4764 7332 7405 7711 7784 7795 7856 10290 10550 10619 10680 12529 12662 13148 13149 13197 
+		1668 1749 1818 4674 4867 7784 10218 10290 10610 10653 10680 12564 12635 12662 13151
 	}
-	manpower=535191
+	manpower=839976
 	buildings_max_level_factor=1.000
-	state_category=pastoral
 }

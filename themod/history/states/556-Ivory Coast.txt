@@ -1,23 +1,23 @@
 state={
-	id=660
-	name="STATE_660"
+	id=556
+	name="STATE_556"
 	resources={
 		rubber=2.000
 	}
 	history={
-		owner = CAR
-		add_core_of = CAR
+		owner = MLL
+		add_core_of = MLL
 		victory_points = {
-			12830 1
+			12751 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 		}
 	}
 	provinces={
-		1974 11012 11108 12830
+		2012 4927 5045 8116 10812 10829 10915 12751 12794
 	}
-	manpower=1543474
+	manpower=1113337
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 }
