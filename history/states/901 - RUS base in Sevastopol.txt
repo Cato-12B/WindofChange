@@ -1,0 +1,22 @@
+state={
+	id=901
+	name="STATE_901"
+	provinces={
+		13209
+	}
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			13208 = {
+				naval_base = 3
+			}
+		}
+
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

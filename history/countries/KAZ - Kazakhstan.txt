@@ -1,0 +1,39 @@
+﻿capital = 590
+
+oob = "KAZ_1936"
+
+set_politics = {
+
+	parties = {
+		democratic = {
+			popularity = 50
+		}
+
+		fascism = {
+			popularity = 10
+		}
+
+		communism = {
+			popularity = 25
+		}
+
+		neutrality = {
+			popularity = 15
+		}
+	}
+}
+
+add_ideas = {
+	SOV_post_soviet_state
+}
+
+create_country_leader = {
+	name = "Nursultan Nazarbayev"
+	desc = ""
+	picture = ""
+	expire = "2030.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}

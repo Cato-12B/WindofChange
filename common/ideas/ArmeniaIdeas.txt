@@ -1,0 +1,530 @@
+ideas = {
+
+	country = {
+	
+	ARM_legacy_of_genocide = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = the_war_to_end_all_wars
+			
+		modifier = {
+			conscription = 0.005
+			stability_factor = 0.05
+			war_support_factor = 0.05
+			army_org_factor = -0.05
+		}
+		targeted_modifier = {
+			tag = TUR
+			attack_bonus_against = 0.25
+			defense_bonus_against = 0.25
+		}
+		targeted_modifier = {
+			tag = AZR
+			attack_bonus_against = 0.25
+			defense_bonus_against = 0.25
+		}
+	}
+		
+	ARM_church = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = yug_orthodox_church_support
+			
+		modifier = {
+			stability_factor = 0.1
+		}
+	}
+
+	ARM_emigration = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = prc_low_popular_support3
+			
+		modifier = {
+       		monthly_population = -2.0
+		}
+	}
+
+	ARM_corrupt_oligarchs = {
+		
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = ROM_king_carol_ii_hedonist
+			
+		modifier = {
+			political_power_gain = -0.10
+		}
+	}
+
+	ARM_dashnaks_exiled = {
+		
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = generic_fascism_banned
+			
+		modifier = {
+			fascism_drift = -0.02
+		}
+	}
+
+	ARM_restored_dashnaks = {
+		
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = saf_history_of_segregation
+			
+		modifier = {
+			fascism_drift = 0.1
+		}
+	}
+
+	SOV_post_soviet_state = {
+		
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		picture = ast_abandon_the_westminster_system_communism
+			
+		modifier = {
+			communism_drift = 0.01
+		}
+	}
+	
+	AZR_turkish_officers = {
+		
+		allowed = {
+			always = yes
+		}
+
+		picture = raj_marginalized_muslim_community_happy
+
+		removal_cost = -1
+			
+		research_bonus = {
+			land_doctrine = 0.03
+			army_org_factor = 0.05
+		}
+	}
+	
+	ARM_militaristic_nation = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = soviet_german_friendship
+			
+		modifier = {
+			conscription = 0.075
+		}
+	}
+	
+	ARM_mig_industry = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = FRA_factory_strikes
+			
+		modifier = {
+			research_time_factor = -0.05
+		}
+	}
+	
+	ARM_native_aerospace = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = dornier
+			
+		modifier = {
+			research_time_factor = -0.05
+		}
+	}
+	
+	ARM_state_workforce = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = FRA_factory_strikes
+			
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.05
+		}
+	}
+	
+	ARM_nationalism = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = generic_reserve_divisions
+			
+		modifier = {
+			conscription = 0.05
+		}
+	}
+	
+	ARM_youth_federation = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = generic_manpower_bonus
+			
+		modifier = {
+			conscription = 0.025
+		}
+	}
+	
+	ARM_nazism_idea = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = yug_local_militias
+			
+		modifier = {
+			fascism_drift = 0.05
+			army_core_attack_factor = 0.05
+		}
+	}
+	
+	ARM_rexism_idea = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = rom_sentinel_of_motherland
+			
+		modifier = {
+			consumer_goods_factor = 0.1
+#			trade_laws_cost_factor = 0.25
+		}
+	}
+	
+	ARM_communism_spirit = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = home_of_the_revolution
+			
+		modifier = {
+			communism_drift = 0.10
+		}
+	}
+	
+	ARM_commissars_spirit = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = nkvd_2
+			
+		modifier = {
+			army_org = 5
+		}
+	}
+	
+	ARM_recruitment_strategies = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = tfv_can_conscription_crisis
+			
+		modifier = {
+			conscription = 0.05
+		}
+	}
+	
+	GEO_company = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = jap_supremacy_of_technology
+			
+		modifier = {
+			research_time_factor = -0.05
+		}
+	}
+	
+	ARM_mikoyan = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = mig_design_bureau
+			
+		modifier = {
+			research_time_factor = -0.05
+		}
+	}
+	
+	ARM_collectivist_workforce_idea = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = ger_rebuild_the_nation
+			
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.05
+		}
+	}
+	
+	ARM_lori_gold = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = generic_foreign_capital
+			
+		modifier = {
+			consumer_goods_factor = -0.05
+		}
+	}
+	
+	ARM_karabakh_expansion = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = the_war_to_end_all_wars
+			
+		modifier = {
+			army_org_factor = 0.05
+		}
+		targeted_modifier = {
+			tag = AZR
+			attack_bonus_against = 0.75
+		}
+	}
+	
+	ARM_islamism = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = yug_local_militias
+			
+		modifier = {
+			fascism_drift = 0.1
+		}
+	}
+	
+	ARM_kurdish_seperatists = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = the_war_to_end_all_wars
+			
+		modifier = {
+			conscription = -0.005
+			stability_factor = -0.05
+			army_org_factor = -0.05
+		}
+	}
+	
+	FRA_european_union = {
+			
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = tne_eu
+			
+		modifier = {
+			stability_factor = 0.1
+#			economy_cost_factor = 0.25
+		}
+	}
+	
+	}
+}

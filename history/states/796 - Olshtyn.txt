@@ -1,0 +1,27 @@
+state=
+{
+	id=796
+	name="STATE_796"
+	manpower = 1439675
+
+	state_category = town
+
+	history=
+	{
+		owner = POL
+    victory_points = { 11245 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			air_base = 2
+			dockyard = 1
+
+		}
+		add_core_of = POL
+
+	}
+	provinces=
+	{
+          266 3351 3380 6375 6402 9327 9346 9372 9398 11245 11386 }
+
+}

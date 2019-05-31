@@ -1,0 +1,27 @@
+state={
+	id=918
+	name="STATE_918" # Transgila
+	manpower = 1092329
+	
+	state_category = town
+	
+	resources={
+		oil=2
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+		}
+		add_core_of = USA
+		victory_points = {
+			3834 3 # Tucson 
+		}
+	}
+
+	provinces={
+		3834 7920 10783
+	}
+}

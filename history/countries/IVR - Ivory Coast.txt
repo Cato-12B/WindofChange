@@ -1,0 +1,41 @@
+﻿capital = 825
+
+oob = "IVR_1991"
+
+set_politics = {
+
+	parties = {
+		democratic = {
+			popularity = 18
+		}
+
+		fascism = {
+			popularity = 0
+		}
+
+		communism = {
+			popularity = 0
+		}
+
+		neutrality = {
+			popularity = 82
+		}
+	}
+
+	ruling_party = neutrality
+	last_election = "1990.10.28"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Félix Houphouët-Boigny"
+	desc = ""
+	picture = ""
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+}

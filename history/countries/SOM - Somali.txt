@@ -1,0 +1,45 @@
+﻿capital = 559
+oob = "SOM_1936"
+set_research_slots = 2
+set_convoys = 10
+add_political_power = 200
+set_stability = 0.8
+set_war_support = 0.1
+
+set_politics = {
+
+	parties = {
+		democratic = {
+			popularity = 30
+		}
+
+		fascism = {
+			popularity = 20
+		}
+
+
+		communism = {
+			popularity = 30
+			#banned = no #default is no
+		}
+
+		neutrality = {
+			popularity = 20
+		}
+	}
+
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Idris Senussi"
+	desc = ""
+	picture = "Portrait_Arabia_Generic_land_3.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}

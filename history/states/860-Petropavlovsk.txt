@@ -1,0 +1,22 @@
+state={
+	id=860
+	name="STATE_860" # Petropavlovsk
+	manpower = 921416
+
+	state_category = city
+
+	history={
+		owner = KAZ
+		buildings = {
+			infrastructure = 5
+		}
+		victory_points = {
+			7741 10
+		}
+			add_core_of = KAZ
+	}
+
+	provinces={
+		1229 1309 1391 1662 1694 4850 7741 7874 12619
+	}
+}

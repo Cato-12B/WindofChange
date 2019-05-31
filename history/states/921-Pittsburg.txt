@@ -1,0 +1,25 @@
+
+state={
+	id=921
+	name="STATE_921" # Pittsburgh
+	manpower = 2219541
+	
+	state_category = large_city
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1 
+			air_base = 2
+		}
+		add_core_of = USA
+		victory_points = {
+			11800 20
+		}
+	}
+
+	provinces={
+		11800 6705 3687 9662 11648 
+	}
+}

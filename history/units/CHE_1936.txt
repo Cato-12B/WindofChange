@@ -1,0 +1,113 @@
+﻿### CHEainian OOB ###
+
+division_template = {
+	name = "Volontery"
+
+	# Note: Represents both regular infantry and militia units
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+
+		motorized = { x = 2 y = 0 }
+	}
+	support = 	{
+		military_police = { x = 0 y = 0 }
+	}
+			priority = 0
+}
+division_template = {
+	name = "Boeviki"
+
+	# Note: Represents both regular infantry and militia units
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+
+		motorized = { x = 1 y = 0 }
+	}
+	support = 	{
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		military_police = { x = 0 y = 2 }
+	}
+			priority = 0
+}
+
+units = {
+###Boeviki###
+	division= {
+		name = "1-iy Batalion Boevikov"
+		location = 666  #Чечня
+		division_template = "Boeviki"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "CHE" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		name = "2-oy Batalion Boevikov"
+		location = 683  #Чечня
+		division_template = "Boeviki"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "CHE" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		name = "3-iy Batalion Boevikov"
+		location = 3672  #Чечня
+		division_template = "Boeviki"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "CHE" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		name = "4-iy Batalion Boevikov"
+		location = 11632  #Чечня
+		division_template = "Boeviki"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "CHE" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		name = "5-iy Batalion Boevikov"
+		location = 13222  #Чечня
+		division_template = "Boeviki"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "CHE" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+}
+
+
+### No air forces (small handful of various aircraft in 1935) ###
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "CHE"
+		}
+		requested_factories = 1
+		progress = 0.80
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "CHE"
+		}
+		requested_factories = 1
+		progress = 0.80
+		efficiency = 100
+	}
+}
+
+#################################

@@ -1,0 +1,23 @@
+
+state={
+	id=875
+	name="STATE_875"
+	state_category = rural
+
+	history={
+		owner = SAF
+                victory_points = { 2207 5 }
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NAM
+
+	}
+
+	provinces={
+		2207
+	}
+	manpower=85000
+	buildings_max_level_factor=1.000
+}

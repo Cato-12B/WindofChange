@@ -1,0 +1,1504 @@
+focus_tree = {
+	id = hellenic_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 2000 }
+
+    focus = { 
+	    id = GRE_steel_extraction
+		icon = GFX_goal_generic_construction2
+		x = 7
+		y = 4
+		cost = 10
+		prerequisite = { focus = GRE_upgrading_our_excavation_tools }
+		ai_will_do = { 
+            factor = 1
+        } 
+		
+		completion_reward = {
+		    add_resource= {
+			    type = steel
+				amount = 12
+				state = 731
+			}
+		}
+	}
+	focus = {
+	   id = GRE_waking_up_the_ancient_giant
+	   icon = GFX_goal_tfv_can_compromise_with_quebec
+	   x = 6	
+	   y = 0
+	   cost = 10
+	   available = {
+				GRE = { has_capitulated = NO 
+				        is_puppet = NO }
+					}
+		completion_reward = { 
+                add_political_power= 100
+ 				add_tech_bonus= {
+				   bonus = 0.5 
+				   uses = 2
+				   category = industry
+				}
+			add_stability = 0.05	
+			}
+		}
+    focus = {
+        id = GRE_slowly_but_surely
+		icon = GFX_goal_generic_construction2
+		x = 2
+		y = 2 
+		cost = 10
+		prerequisite = { 
+		                 focus = GRE_waking_up_the_ancient_giant
+				    } 
+		available = {
+		         GRE = { has_capitulated = NO }
+				 }
+				 
+		completion_reward = {
+						47 = {
+						        add_extra_state_shared_building_slots = 2
+                                add_building_construction = {
+                                                        type = industrial_complex
+                                                        level = 2
+                                                        instant_build = yes
+	        										}
+												}
+											}
+										}
+	focus = {
+            id = GRE_reducing_unemployment
+            icon = GFX_goal_generic_neutrality_focus
+            x = 3
+            y = 3
+			cost = 10
+			prerequisite = { 
+			                 focus = GRE_slowly_but_surely 
+			            } 
+			available = {
+                          GRE { 
+                                has_capitulated = NO
+							}
+						}
+			mutually_exclusive = { 
+			                       focus = GRE_cutting_the_wages_of_the_deputies 
+								} 	
+            completion_reward = {
+                        add_stability = 0.05
+                        731 = {
+                                add_extra_state_shared_building_slots = 2
+                                add_building_construction = {
+                                                            type = industrial_complex
+                                                            level = 2
+                                                            instant_build = yes   
+                                                         }
+												    }
+												}
+											}	
+	focus = {		
+		    id = GRE_cutting_the_wages_of_the_deputies
+			icon = GFX_focus_generic_self_management
+            x = 1
+            y = 3
+            cost = 10
+			prerequisite = { 
+			                focus = GRE_slowly_but_surely 
+			            } 
+			mutually_exclusive = {
+			                        focus = GRE_reducing_unemployment
+								}	
+			completion_reward = {
+			            add_stability = 0.15 
+				        185 = {
+                                    add_extra_state_shared_building_slots = 2
+                                    add_building_construction = {
+                                                                type = industrial_complex
+                                                                level = 2
+                                                                instant_build = yes   
+                                                            }
+														}
+													}
+												}	
+	focus = {
+            id = GRE_build_more_industrial_factories
+            icon = GFX_goal_generic_construct_civ_factory
+			x = 1
+			y = 4
+			cost = 10
+			prerequisite = {
+			                focus = GRE_cutting_the_wages_of_the_deputies
+						}
+			completion_reward = {
+                        47 = {
+                                    add_extra_state_shared_building_slots = 2
+                                    add_building_construction = {
+                                                                type = industrial_complex
+                                                                level = 2
+                                                                instant_build = yes   
+                                                            }   
+							                    }
+                                            }
+										}	
+	focus = {
+            id = GRE_building_more_military_factories
+            icon =  GFX_goal_generic_construct_mil_factory
+			x = 3
+			y = 4
+			cost = 10 
+			prerequisite = {
+			                focus = GRE_reducing_unemployment 
+						}
+			completion_reward = {
+                        184 = {
+                                    add_extra_state_shared_building_slots = 2
+                                    add_building_construction = {
+                                                                type = arms_factory
+                                                                level = 2
+                                                                instant_build = yes   
+                                                            }
+                                                }
+                                            }
+										}	
+	focus = {
+            id = GRE_build_more_dockyards
+            icon = GFX_goal_generic_construct_naval_dockyard 
+            x = 3
+            y = 5
+            cost = 10
+            prerequisite = {
+                            focus = GRE_building_more_military_factories
+						}
+			completion_reward = {
+                        182 = {
+                                    add_extra_state_shared_building_slots = 2
+                                    add_building_construction = {
+                                                                type = dockyard
+                                                                level = 2
+                                                                instant_build = yes   
+                                                            }
+                                                }
+											}
+										}	
+	focus = {	
+            id = GRE_autarky
+            icon = GFX_goal_generic_production2
+            x = 6
+            y = 2
+            cost = 10
+            prerequisite = {
+                            focus = GRE_waking_up_the_ancient_giant	
+					    }	
+			completion_reward = {
+                      add_tech_bonus = {
+                              bonus = 0.30
+                              uses = 2
+                              category = industry
+                            }
+                      add_tech_bonus = {
+                              bonus = 0.25
+                              uses = 3
+							  category = electronics
+							}
+					    }
+					}
+	focus = {
+            id = GRE_upgrading_our_excavation_tools
+            icon = GFX_goal_generic_construction2
+            x = 6
+            y = 3 
+            cost = 10
+            prerequisite = {
+                            focus = GRE_autarky
+                        }
+            completion_reward = {
+                      add_tech_bonus = {
+                              bonus = 0.40
+                              uses = 2
+                              category = excavation_tech
+							}
+						}
+					}
+	focus = {
+            id = GRE_oil_extruction
+            icon = GFX_goal_generic_oil_refinery
+            x = 5
+            y = 4
+            cost = 10
+            prerequisite = {
+                            focus = GRE_upgrading_our_excavation_tools
+						}
+            completion_reward = {
+                        182 = {
+                                    add_extra_state_shared_building_slots = 2
+                                    add_building_construction = {
+                                                                type = industrial_complex
+                                                                level = 2
+                                                                instant_build = yes   
+                                                            }
+														}	
+                      add_resource = {
+                         type = oil
+                         amount = 15
+                         state = 182
+                        }
+                    }
+                }
+	focus = { 
+            id = GRE_metaxas_line_project
+            icon = GFX_goal_generic_construct_military
+            x = 10
+            y = 2
+            cost = 10
+            prerequisite = {
+			                focus = GRE_waking_up_the_ancient_giant
+						}	
+		  	
+		    completion_reward = {
+			    185 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9805
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3914
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 841
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9837
+							instant_build = yes
+						}
+					}
+				731 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 936
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3526
+							instant_build = yes
+						}
+					}	
+				}
+			}	
+	focus = { 
+            id = GRE_expand_the_metaxas_line_project
+            icon = GFX_goal_generic_construct_military
+			relative_position_id = GRE_metaxas_line_project
+            x = 0
+            y = 1
+            cost = 10
+            prerequisite = {
+			                focus = GRE_metaxas_line_project
+						}
+		    completion_reward = {
+			    184 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6990
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9791
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11774
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11905
+							instant_build = yes
+						}
+					}
+				}
+			}
+	focus = { 
+            id = GRE_fortificate_all_GRElas_project
+            icon = GFX_goal_generic_construct_military
+			relative_position_id = GRE_expand_the_metaxas_line_project
+            x = 0
+            y = 1
+            cost = 10
+            prerequisite = {
+			                focus = GRE_expand_the_metaxas_line_project
+						}						
+		  	
+		    completion_reward = {
+			custom_effect_tooltip = AST_homeland_defense_tt
+			hidden_effect = {
+				every_owned_state =	{
+					limit = {
+						is_controlled_by = ROOT
+						is_on_continent = australia
+						is_in_home_area = yes
+					}
+					#Fortify entire coastline
+					add_building_construction = {
+						type = bunker
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+						}
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+						}
+						level = 2
+						instant_build = yes
+					}
+	
+					#Extra fort on naval bases
+					add_building_construction = {
+						type = bunker
+						province = {
+							all_provinces = yes
+							limit_to_naval_base = yes
+						}
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						province = {
+							all_provinces = yes
+							limit_to_naval_base = yes
+						}
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		    id = GRE_the_megali_idea
+            icon = GFX_goal_tfv_strengthen_commonwealth_ties
+            x = 27
+            y = 0
+            cost = 10
+            completion_reward = {
+			          add_war_support = 0.05
+                      add_manpower = 65000
+                      add_political_power = 100
+                      add_stability = 0.05
+                      add_state_core = 106		        
+                      add_state_core = 48
+                      add_state_core = 212
+                      add_state_core = 211
+                      add_state_core = 339
+                      add_state_core = 340
+                      add_state_core = 347
+                    }
+                }
+	focus = { 
+            id =  GRE_waking_up_our_military_force
+            icon = GFX_goal_tfv_can_compromise_with_quebec
+			relative_position_id = GRE_the_megali_idea
+            x = 0
+            y = 1			
+            cost = 10
+			prerequisite = {
+			                focus = GRE_the_megali_idea
+						}
+            completion_reward = {
+                      army_experience = 50
+                      add_tech_bonus = {
+                              bonus = 0.35
+                              uses = 2
+                              category = land_doctrine
+                            }
+                        }
+                    }
+	focus = { 	
+            id = GRE_small_mobilization
+            icon = GFX_focus_generic_little_entente
+			relative_position_id = GRE_waking_up_our_military_force
+            x = -5
+            y = 1
+            cost = 10
+            prerequisite = {
+                            focus = GRE_waking_up_our_military_force
+                        }
+            completion_reward = {
+                      army_experience = 20
+                      add_ideas = { GRE_small_mobilization }
+                }
+			}	
+	focus = {
+            id = GRE_medium_mobilization 
+            icon = GFX_focus_generic_little_entente
+			relative_position_id = GRE_small_mobilization
+            x = 0
+            y = 1
+            cost = 10			
+            prerequisite = {
+                            focus = GRE_small_mobilization 
+                        }
+			available = { 
+                        threat > 0.15
+					}	
+            completion_reward = {
+                        army_experience = 15
+						add_ideas = { GRE_medium_mobilization }
+					}
+	            }
+	focus = {
+            id = GRE_modern_artillery
+            icon = GFX_goal_generic_army_artillery
+			relative_position_id = GRE_waking_up_our_military_force
+            x = -2
+            y = 1
+			cost = 10
+            prerequisite = {
+                            focus = GRE_waking_up_our_military_force
+                        }
+            completion_reward = {
+                      add_tech_bonus = {
+                              bonus = 0.30
+                              uses = 2 
+                              category = artillery
+                            }
+                        }
+                    }
+	focus = {
+		id = GRE_demand_monastiri
+		icon = GFX_goal_demand_sudetenland
+		relative_position_id = GRE_demand_northern_epirus
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = { focus = GRE_demand_northern_epirus }
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 249999 } 		
+			NOT = {
+				AND = {
+					YUG = { is_in_faction_with = GRE }
+					has_war = yes
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				YUG = { is_puppet_of = GRE }
+				106 = { 
+					CONTROLLER = {
+						has_war_with = GRE
+					}
+				}
+				GRE = { controls_state = 106 }
+			}
+		}
+		cancel = {
+			is_puppet = yes
+		}
+		cancel_if_invalid = yes	
+		completion_reward = {
+			YUG = { country_event = { id = GRElas.9 days = 1 } }
+		}
+	}
+	focus = {
+		id = GRE_demand_northern_epirus
+		icon = GFX_goal_generic_forceful_treaty
+		relative_position_id = GRE_waking_up_our_military_force
+		x = 4
+		y = 1
+		prerequisite = { focus = GRE_waking_up_our_military_force }
+		available = {
+             		is_puppet = no
+                    has_army_manpower = { size > 179999 } 	
+				}
+		cost = 10
+		bypass = {
+			763 = { is_owned_by = GRE }
+		}
+		ai_will_do = {
+			factor = 10	
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}	
+		completion_reward = {
+			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
+			if = {
+				limit = {
+					ALB = { 
+						owns_state = 788
+						controls_state = 788
+					}
+				}
+				ALB = {
+					country_event = { id = GRElas.13 }
+				}
+			}
+		}
+		
+	}
+	focus = {
+            id = GRE_modern_guns
+            icon = GFX_goal_generic_axis_build_infantry
+			relative_position_id = GRE_modern_artillery
+            x = 0
+            y = 1
+			cost = 10
+            prerequisite = {
+                            focus = GRE_modern_artillery
+                        }
+            mutually_exclusive = { focus = GRE_support_company }            
+
+            completion_reward = {
+                      add_tech_bonus = {
+                              bonus = 0.30
+                              uses = 2 
+                              category = infantry_weapons
+                            }
+                        }
+                    }
+	focus = {
+            id = GRE_big_mobilization 
+            icon = GFX_focus_generic_little_entente
+			relative_position_id = GRE_medium_mobilization
+            x = 0
+            y = 1
+            cost = 10			
+            prerequisite = {
+                            focus = GRE_medium_mobilization 
+                        }
+		    available = { 
+			            threat > 0.35
+					}	
+            completion_reward = {
+                        army_experience = 15
+						add_ideas = { GRE_big_mobilization }
+						}
+					}
+	focus = {
+            id = GRE_tanks
+            icon = GFX_goal_generic_army_tanks
+			relative_position_id = GRE_modern_guns
+            x = 0
+            y = 1
+			cost = 10
+            prerequisite = {
+                            focus = GRE_modern_guns
+                        }           
+            completion_reward = {
+                      add_tech_bonus = {
+                              bonus = 0.35
+                              uses = 2 
+                              category = armor
+                            }
+                        }
+                    }
+
+    focus = {
+            id = GRE_foreign_tanks
+            icon = GFX_goal_generic_army_tanks
+			relative_position_id = GRE_modern_guns
+            x = 2
+            y = 1
+			cost = 10
+            prerequisite = {
+                            focus = GRE_support_company
+                        }
+                        
+            completion_reward = {
+                    add_ideas = GRE_tank_licenses
+                    add_ideas = GRE_foreign_tanks
+                        }
+                    }
+
+	focus = {
+        id = GRE_naval_guns
+        icon = GFX_goal_continuous_naval_production
+		prerequisite = { focus = GRE_waking_up_our_military_force }
+        relative_position_id = GRE_waking_up_our_military_force
+        x = 0
+        y = 1
+        cost = 10
+
+        available = { 
+                        threat > 0.20
+					}
+		
+		completion_reward = {
+		            remove_ideas = GRE_naval_schism
+					add_ideas = GRE_naval_fix
+					}
+				}
+	
+        		
+	focus = {
+            id = GRE_support_company
+            icon = GFX_focus_generic_combined_arms
+			relative_position_id = GRE_modern_guns
+            x = 2
+            y = 0
+			cost = 10
+            prerequisite = {
+                            focus = GRE_modern_artillery
+                        }
+            mutually_exclusive = { focus = GRE_modern_guns }            
+            completion_reward = {
+                        add_ideas = GRE_more_guns
+                            }
+                        }
+                    
+	focus = {
+	    id = GRE_demand_constantinople
+		icon = GFX_goal_demand_sudetenland
+		relative_position_id = GRE_demand_romilia
+		x = -1
+		y = 1
+		prerequisite = { focus = GRE_demand_romilia }
+		cost = 10
+		completion_reward = {
+		    TUR = { country_event = { id = GRElas.12 days = 1 } }
+			add_manpower = 15000
+			}
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 324999 } 		
+			NOT = {
+				AND = {
+					TUR = { is_in_faction_with = GRE }
+					has_war = yes
+				}
+			}
+		}
+	}
+	focus = {
+	    id = GRE_demand_dobrudja
+		icon = GFX_goal_demand_sudetenland
+		relative_position_id = GRE_demand_romilia
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = GRE_demand_romilia }
+		cost = 10
+		completion_reward = {
+		    ROM = { country_event = { id = GRElas.11 days = 1 } }
+			 add_manpower = 10000
+			}
+		available = {
+			is_puppet = no 		
+			NOT = {
+				AND = {
+					ROM = { is_in_faction_with = GRE }
+					has_war = yes
+				}
+			}
+		}	
+	}
+	focus = {
+		id = GRE_extra_tech_slot
+		icon = GFX_focus_research
+		text = extra_tech_slot
+		prerequisite = { focus = GRE_oil_extruction }
+		prerequisite = { focus = GRE_steel_extraction }
+		x = 1
+		y = 1
+		relative_position_id = GRE_oil_extruction
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = GRE_announce_the_elvo_project
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = GRE_extra_tech_slot }
+		x = 0
+		y = 1
+		relative_position_id = GRE_extra_tech_slot
+
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = GRE_announce_the_elvo_project
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+
+			add_ideas = GRE_creation_of_elvo
+		}	
+    }
+
+	focus = {
+	    id = GRE_use_elvo_for_civilian_purposes
+		icon = GFX_goal_generic_construct_civ_factory
+		mutually_exclusive = { focus = GRE_use_elvo_for_military_purposes }
+        prerequisite = { focus = GRE_announce_the_elvo_project }
+		relative_position_id = GRE_announce_the_elvo_project
+		x = -3
+		y = 1
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+                        183 = {
+                                    add_extra_state_shared_building_slots = 3
+                                    add_building_construction = {
+                                                                type = industrial_complex
+                                                                level = 3
+                                                                instant_build = yes
+															}
+														}
+													add_ideas = GRE_civilian_elvo	
+													}
+												}	
+	focus = {
+        id = GRE_build_more_railroads
+        icon = GFX_goal_generic_construct_infrastructure
+        relative_position_id = GRE_use_elvo_for_civilian_purposes
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = GRE_use_elvo_for_civilian_purposes } 
+         
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+        completion_reward = {
+                        47 = {
+                                add_building_construction = {
+                                     type =infrastructure
+                                     level = 4
+                                     instant_build = yes
+									}
+								}	 
+						    187	 = {
+                                  add_building_construction = {
+                                     type =infrastructure
+                                     level = 4
+                                     instant_build = yes									 
+									}
+								}
+						    add_stability = 0.05
+							}
+						}
+						
+	focus = {
+            id = GRE_some_more_military_factories	
+			icon = GFX_goal_generic_construct_mil_factory 
+            relative_position_id = GRE_build_more_railroads
+            x = 0
+            y = 1
+            cost = 10
+			prerequisite = { focus = GRE_build_more_railroads }
+            
+            completion_reward = {
+                        185 = {
+                                    add_extra_state_shared_building_slots = 2
+                                    add_building_construction = {
+                                                                type = arms_factory
+                                                                level = 2
+                                                                instant_build = yes   
+                                                            }
+                                                }
+                                            }
+										}
+	focus = {
+            id = GRE_mining_for_steel_and_rubber
+            icon = GFX_goal_generic_construction
+            relative_position_id = GRE_some_more_military_factories
+            prerequisite = { focus = GRE_some_more_military_factories }
+           	x = 0
+            y = 1
+            cost = 10
+           
+            available = {
+                        controls_state = 185
+                        controls_state = 186
+					}
+					
+			cancel_if_invalid = yes
+		    continue_if_invalid = no
+		    available_if_capitulated = no	
+ 
+            completion_reward = {
+                            185 = {
+                                add_resource = {
+								type = steel
+                                amount = 10
+                                state = 185
+                            }
+                            186 = {
+                                add_resource = {
+                                type = aluminium				
+                                amount = 10
+                                state = 186
+								}
+							}	
+						        
+							47 = {	
+								add_resource = {
+								type = rubber
+								amount = 12
+								state = 47
+								}
+							}
+                        }
+                    }
+				}
+			
+			
+					
+	focus = {
+	    id = GRE_build_more_industrial_factories_1
+		icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = GRE_some_more_military_factories }
+		relative_position_id = GRE_some_more_military_factories
+		x = -2
+		y = 1
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+                        731 = {
+                                    add_extra_state_shared_building_slots = 3
+                                    add_building_construction = {
+                                                                type = industrial_complex
+                                                                level = 3
+                                                                instant_build = yes
+															}
+														}
+													}
+												}	
+	focus = {
+	    id = GRE_build_more_industrial_factories_2
+		icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = GRE_build_more_industrial_factories_1 }
+		relative_position_id = GRE_build_more_industrial_factories_1
+		x = 0
+		y = 1
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+                        184 = {
+                                    add_extra_state_shared_building_slots = 3
+                                    add_building_construction = {
+                                                                type = industrial_complex
+                                                                level = 3
+                                                                instant_build = yes
+															}
+														}
+													}
+												}	
+	focus = {
+        id = GRE_build_more_railroads_1
+        icon = GFX_goal_generic_construct_infrastructure
+        relative_position_id = GRE_some_more_military_factories
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { focus = GRE_some_more_military_factories } 
+         
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+        completion_reward = {
+                            731 = {
+                                    add_building_construction = {
+                                     type =infrastructure
+                                     level = 3
+                                     instant_build = yes     
+                                    }
+                                }
+							182 = {
+                                    add_building_construction = {
+                                     type =infrastructure
+                                     level = 3
+                                     instant_build = yes
+									}
+								}
+							}
+						}
+	focus = {
+        id = GRE_build_more_railroads_2
+        icon = GFX_goal_generic_construct_infrastructure
+        relative_position_id = GRE_build_more_railroads_1
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = GRE_build_more_railroads_1 } 
+         
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+        completion_reward = {
+                            187 = {
+                                    add_building_construction = {
+                                     type = infrastructure
+                                     level = 4
+                                     instant_build = yes     
+                                    }
+                                }
+							164 = {
+                                    add_building_construction = {
+                                     type = infrastructure
+                                     level = 4
+                                     instant_build = yes
+									}
+								}
+							}
+						}
+	focus = {
+            id = GRE_build_more_dockyards_1
+            icon = GFX_goal_generic_construct_naval_dockyard 
+			relative_position_id = GRE_build_more_industrial_factories_2
+            x = 2
+            y = 1
+            cost = 10
+            prerequisite = {
+                            focus = GRE_build_more_industrial_factories_2
+						}
+			prerequisite = { focus = GRE_build_more_railroads_2 }			
+			completion_reward = {
+                        183 = {
+                                    add_extra_state_shared_building_slots = 3
+                                    add_building_construction = {
+                                                                type = dockyard
+                                                                level = 3
+                                                                instant_build = yes   
+                                                            }
+                                                }
+											}
+										}	
+	focus = {
+	    id = GRE_use_elvo_for_military_purposes
+		icon = GFX_goal_generic_construct_mil_factory
+        prerequisite = { focus = GRE_announce_the_elvo_project }
+		relative_position_id = GRE_announce_the_elvo_project
+		mutually_exclusive = { 
+		                   focus = GRE_use_elvo_for_civilian_purposes
+					    }
+		x = 3
+		y = 1
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+                        187 = {
+                                    add_extra_state_shared_building_slots = 3
+                                    add_building_construction = {
+                                                                type = arms_factory
+                                                                level = 3
+                                                                instant_build = yes
+															}
+														}
+									add_ideas = GRE_military_elvo			
+													}
+		modifiers = {
+		    industrial_capacity_factory = 0.1
+			production_speed_arms_factory_factor = 0.15
+			production_factory_efficiency_gain_factor = 0.05
+		}											
+												}	
+	focus = {
+	    id = GRE_need_for_some_industrial_factories
+		icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = GRE_use_elvo_for_military_purposes }
+		relative_position_id = GRE_use_elvo_for_military_purposes
+		x = 0
+		y = 1
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+                        47 = {
+                                    add_extra_state_shared_building_slots = 3
+                                    add_building_construction = {
+                                                                type = industrial_complex
+                                                                level = 3
+                                                                instant_build = yes
+															}
+														}
+													}	
+												}	
+			
+	 focus = {
+        id = GRE_need_for_some_railroads
+        icon = GFX_goal_generic_construct_infrastructure
+        relative_position_id = GRE_need_for_some_industrial_factories
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = GRE_need_for_some_industrial_factories } 
+         
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+        completion_reward = {
+                            183 = {
+                                    add_building_construction = {
+                                     type =infrastructure
+                                     level = 4
+                                     instant_build = yes     
+                                    }
+                                }
+							184 = {
+                                    add_building_construction = {
+                                     type =infrastructure
+                                     level = 4
+                                     instant_build = yes
+									}
+								}
+							}
+						}
+    focus = {
+        id = mining_for_oil_and_aluminium
+        icon = GFX_goal_generic_construction
+        prerequisite = { focus = GRE_need_for_some_railroads }
+        relative_position_id = GRE_need_for_some_railroads
+        x = 0
+        y = 1
+        cost = 10
+
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+ 
+        completion_reward = {
+                        182 = {
+                            add_resource = {
+                               type = oil
+                               amount = 12
+                               state = 182
+                               }
+                            }
+                        164 = {
+                            add_resource = {
+                                type = aluminium
+                                amount = 14
+                                state = 164
+                                }
+                            }
+                        }
+                    }						
+	focus = {
+	    id = GRE_build_more_military_factories
+		icon = GFX_goal_generic_construct_mil_factory
+        prerequisite = { focus = GRE_need_for_some_railroads }
+		relative_position_id = GRE_need_for_some_railroads
+		x = -2
+		y = 1
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+                        47 = {
+                                    add_extra_state_shared_building_slots = 3
+                                    add_building_construction = {
+                                                                type = arms_factory
+                                                                level = 3
+                                                                instant_build = yes
+															}
+														}
+													}
+												}	
+	focus = {
+	    id = GRE_build_more_military_factories_1
+		icon = GFX_goal_generic_construct_mil_factory
+        prerequisite = { focus = GRE_build_more_military_factories }
+		relative_position_id = GRE_build_more_military_factories
+		x = 0
+		y = 1
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+                        186 = {
+                                    add_extra_state_shared_building_slots = 3
+                                    add_building_construction = {
+                                                                type = arms_factory
+                                                                level = 3
+                                                                instant_build = yes
+															}
+														}
+													}
+												}	
+	focus = {
+        id = GRE_build_more_dockyards_2
+        icon = GFX_goal_generic_construct_naval_dockyard
+        relative_position_id = GRE_need_for_some_railroads
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { focus = GRE_need_for_some_railroads } 
+         
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+        completion_reward = {
+                        164 = {
+                                    add_extra_state_shared_building_slots = 3
+                                    add_building_construction = {
+                                                                type = dockyard
+                                                                level = 3
+                                                                instant_build = yes
+															}
+														}
+													}
+												}	
+	focus = {
+        id = GRE_build_more_dockyards_3
+        icon = GFX_goal_generic_construct_naval_dockyard
+        relative_position_id = GRE_build_more_dockyards_2
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = GRE_build_more_dockyards_2 } 
+         
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+        completion_reward = {
+                        185 = {
+                                    add_extra_state_shared_building_slots = 3
+                                    add_building_construction = {
+                                                                type = dockyard
+                                                                level = 3
+                                                                instant_build = yes
+															}
+														}
+													}
+												}	
+	focus = {
+        id = GRE_build_some_industrial_factories_and_railroads
+        icon = GFX_goal_generic_construct_infrastructure
+        relative_position_id = GRE_build_more_military_factories_1
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { focus = GRE_build_more_military_factories_1 } 
+        prerequisite = { focus = GRE_build_more_dockyards_3 }
+        cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+        completion_reward = {
+                            731 = {
+                                    add_building_construction = {
+                                     type = infrastructure
+                                     level = 4
+                                     instant_build = yes     
+                                    }
+                                }
+							731 = {
+							        add_extra_state_shared_building_slots = 3
+                                    add_building_construction = {
+                                     type = industrial_complex
+                                     level = 3
+                                     instant_build = yes
+									}
+								}
+							}
+						}
+	focus = {
+		id = GRE_nuclear_effort
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = GRE_build_more_dockyards_1 focus = GRE_build_some_industrial_factories_and_railroads  }
+		x = 3
+		y = 1
+         relative_position_id = GRE_build_more_dockyards_1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 0.5
+				category = nuclear
+			}
+		}
+	}					
+	focus = {
+	    id = GRE_demand_romilia
+		icon = GFX_goal_demand_sudetenland
+		relative_position_id = GRE_demand_northern_epirus
+		x = 0
+		y = 1
+		prerequisite = { focus = GRE_demand_northern_epirus }
+		cost = 10
+		completion_reward = {
+		    BUL = { country_event = { id = GRElas.1 days = 1 } }
+			 add_manpower = 13000
+			}
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 224999 } 		
+			NOT = {
+				AND = {
+					BUL = { is_in_faction_with = GRE }
+					has_war = yes
+				}
+			}
+		}
+	}
+    focus = {
+        id = GRE_government_reform
+        icon = GFX_goal_generic_national_unity
+        cost = 10
+        relative_position_id = GRE_waking_up_the_ancient_giant
+        x = 9
+        y = 0
+         
+        completion_reward = {
+            add_political_power = 120
+            add_stability = 0.05
+		}
+	}
+    focus = {
+        id = GRE_support_nationalism
+        icon = GFX_goal_support_fascism
+        cost = 10
+		mutually_exclusive = { focus = GRE_support_monarchy }
+        relative_position_id = GRE_government_reform
+        x = 2
+        y = 1
+        prerequisite = { focus = GRE_government_reform }
+
+        completion_reward = {
+            add_ideas = nationalism
+		}
+	}
+	focus = {
+	    id = GRE_support_monarchy
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		mutually_exclusive = { focus = GRE_support_nationalism }
+		prerequisite = { focus = GRE_government_reform }
+		relative_position_id = GRE_government_reform
+		x = -2
+		y = 1
+		 completion_reward = {
+		    add_political_power = 100
+			}
+		}	
+		 
+    focus = {
+        id = GRE_find_our_way
+        icon = GFX_goal_generic_military_deal
+        cost = 10
+        prerequisite = { focus = GRE_support_nationalism }
+        relative_position_id = GRE_support_nationalism 
+        x = 0
+        y = 1		
+
+		completion_reward = {
+			                    add_political_power = 80
+								add_war_support = 0.05	
+		    }
+	    }
+    
+	
+	focus = {
+		id = GRE_ban_communism
+		icon = GFX_goal_anti_comintern_pact
+        cost = 10
+		prerequisite = { focus = GRE_support_nationalism }
+		relative_position_id = GRE_support_nationalism
+		x = -2
+		y = 1
+
+		available = {
+			has_government = fascism
+		}
+		
+		completion_reward = {
+			add_ideas = GRE_communism_banned
+			start_civil_war = { ideology = communism size = 0.5 } 
+		}
+	}
+	focus = {
+		id = GRE_ban_democracy
+		icon = GFX_goal_anti_comintern_pact
+        cost = 10
+		prerequisite = { focus = GRE_support_nationalism }
+		relative_position_id = GRE_support_nationalism
+		x = 2
+		y = 1
+
+		available = {
+			has_government = fascism
+		}
+		
+		completion_reward = {
+			add_ideas = GRE_democracy_banned
+			start_civil_war = { ideology = democratic size = 0.5 } 
+		}
+	}
+	focus = {
+	    id = GRE_on_our_own
+		icon = GFX_goal_generic_attack_allies
+		cost = 10
+		prerequisite = { focus = GRE_find_our_way }
+		relative_position_id = GRE_find_our_way
+		x = 2
+		y = 1
+		mutually_exclusive = { focus = GRE_join_germany }
+		
+		completion_reward = {
+		        create_faction = "Eastern_Roman_Empire"
+			}
+		}
+    focus = { 
+        id = GRE_join_germany 
+        icon = GFX_goal_anschluss
+        cost = 10
+        prerequisite = { focus = GRE_find_our_way }
+        relative_position_id = GRE_find_our_way
+        x = -1 
+        y = 1
+		mutually_exclusive = { focus = GRE_on_our_own }
+        
+        completion_reward = {
+			GER = { country_event = { id = generic.2 } }
+		}
+	}
+    focus = {
+        id = GRE_join_german_research
+        icon = GFX_goal_tfv_generic_tech_sharing 
+        cost = 10
+        prerequisite = { focus = GRE_join_germany }
+        relative_position_id = GRE_join_germany
+        x = 0
+        y = 1
+        
+        completion_reward = {
+			GER = { add_to_tech_sharing_group = axis_research }
+			add_to_tech_sharing_group = axis_research
+		}		
+	}
+	focus = {
+	    id = GRE_secure_monarchy
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10
+		prerequisite = { focus = GRE_support_monarchy }
+		relative_position_id = GRE_support_monarchy
+		x = 0
+		y = 1
+		
+	    completion_reward = {
+		        add_ideas = GRE_secure_monarchy
+			}
+		}
+	}	
+		
+													
+
+
+    	
+		
+                              							  
+                                   							
+						
+			
+																
+																
+			    
+		    	
+			
+		  					
+						
+					
+		
+			    
+			
+		
+	   

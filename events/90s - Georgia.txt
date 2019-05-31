@@ -1,0 +1,22 @@
+﻿###########################
+# Georgian Events
+###########################
+
+add_namespace = 90s_georgia
+
+country_event = {
+	id = 90s_georgia.1
+	title = 90s_georgia.1.t
+	desc = 90s_georgia.1.d
+	picture = GFX_report_event_election_vote
+	trigger = {
+		tag = GEO
+		date > 1992.1.1
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 3 }
+	option = {
+		name = 90s_georgia.1.a
+		release = SOS
+	}
+}

@@ -1,0 +1,19 @@
+state={
+	id=909
+	name="STATE_909" # Pavlograd
+	manpower = 275000
+
+	state_category = rural
+
+	history={
+		owner = UKR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = UKR
+	}
+
+	provinces={
+		453 472 486 9463 9479 11452
+	}
+}

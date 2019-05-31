@@ -1,0 +1,25 @@
+
+state={
+	id=93
+	name="STATE_93"
+
+	history={
+		owner = UKR
+		victory_points = {
+			513 6
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = UKR
+
+	}
+
+	provinces={
+		422 474 513 572 3412 6435 6520 9520 11441 11543 3496 11503
+	}
+	manpower=2061200
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,237 @@
+
+music = {
+	name = "maintheme"
+	file = "maintheme.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - Aim for the Heart"
+	file = "gen/WiC/WiC - Aim for the Heart.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - Bannons Sacrifice"
+	file = "gen/WiC/WiC - Bannons Sacrifice.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - Broken Flower"
+	file = "gen/WiC/WiC - Broken Flower.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - Aim for the Heart"
+	file = "gen/WiC/WiC - Aim for the Heart.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - World in Conflict"
+	file = "gen/WiC/WiC - World in Conflict.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - Trimethoxyphenethylamine"
+	file = "gen/WiC/WiC - Trimethoxyphenethylamine.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - Strong Point Strongpoint"
+	file = "gen/WiC/WiC - Strong Point Strongpoint.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - Squirrel on a Branch"
+	file = "gen/WiC/WiC - Squirrel on a Branch.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - Sniper Run"
+	file = "gen/WiC/WiC - Sniper Run.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - Shortcomings"
+	file = "gen/WiC/WiC - Shortcomings.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - Seattle Mission Start"
+	file = "gen/WiC/WiC - Seattle Mission Start.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - Percutio"
+	file = "gen/WiC/WiC - Percutio.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - Nicole"
+	file = "gen/WiC/WiC - Nicole.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - Multiplayer End"
+	file = "gen/WiC/WiC - Multiplayer End.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - Looking for Survivors"
+	file = "gen/WiC/WiC - Looking for Survivors.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - Hold the Bridge"
+	file = "gen/WiC/WiC - Hold the Bridge.ogg"
+	volume = 0.65
+}
+music = {
+	name = "WiC - Final Fight"
+	file = "gen/WiC/WiC - Final Fight.ogg"
+	volume = 0.65
+}
+#EW
+music = {
+	name = "East vs West - WW3"
+	file = "gen/EW/East vs West - WW3.ogg"
+	volume = 0.65
+}
+music = {
+	name = "East vs West - Waveform"
+	file = "gen/EW/East vs West - Waveform.ogg"
+	volume = 0.65
+}
+music = {
+	name = "East vs West - Water Vapour"
+	file = "gen/EW/East vs West - Water Vapour.ogg"
+	volume = 0.65
+}
+music = {
+	name = "East vs West - Tranquilite"
+	file = "gen/EW/East vs West - Tranquilite.ogg"
+	volume = 0.65
+}
+music = {
+	name = "East vs West - Spanish Heart"
+	file = "gen/EW/East vs West - Spanish Heart.ogg"
+	volume = 0.65
+}
+music = {
+	name = "East vs West - Responsibilities"
+	file = "gen/EW/East vs West - Responsibilities.ogg"
+	volume = 0.65
+}
+music = {
+	name = "East vs West - Defcon 1-Nuclear Bomb"
+	file = "gen/EW/East vs West - Defcon 1-Nuclear Bomb.ogg"
+	volume = 0.65
+}
+music = {
+	name = "East vs West - Defcon 2-Weary Situation"
+	file = "gen/EW/East vs West - Defcon 2-Weary Situation.ogg"
+	volume = 0.65
+}
+music = {
+	name = "East vs West - Delightful Poetry"
+	file = "gen/EW/East vs West - Delightful Poetry.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Suspense"
+	file = "gen/Suspense.ogg"
+	volume = 0.65
+}
+music = {
+	name = "The Flight Of The Pigeon"
+	file = "gen/The Flight Of The Pigeon.ogg"
+	volume = 0.65
+}
+music = {
+	name = "When It All Falls Down"
+	file = "gen/Audiomachine - When It All Falls Down.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Dawn of a New Time"
+	file = "gen/Dawn of a New Time.ogg"
+	volume = 0.65
+}
+music = {
+	name = "2 Minutes To Midnight"
+	file = "gen/Iron Maiden 2 Minutes To Midnight.ogg"
+	volume = 0.70
+}
+music = {
+	name = "Nuclear"
+	file = "gen/Mike Oldfield - Nuclear.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Winner None"
+	file = "gen/war/Rubinstein War Games - Winner None.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Terrible War"
+	file = "gen/war/Terrible War.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Defend the Headquarters of Revolution"
+	file = "countries/prk/DPRK Song - Defend the Headquarters of Revolution.ogg"
+	volume = 0.65
+}
+music = {
+	name = "No Motherland Without You"
+	file = "countries/prk/No Motherland Without You.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Dont Ask My Name"
+	file = "countries/prk/Dont Ask My Name.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Korea does what It is Determined to Do!"
+	file = "countries/prk/Korea does what It is Determined to Do!.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Leader just give us your Order!"
+	file = "countries/prk/Leader just give us your Order!.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Without a break"
+	file = "countries/prk/Without a break.ogg"
+	volume = 0.65
+}
+music = {
+	name = "One against a hundred"
+	file = "countries/prk/One against a hundred.ogg"
+	volume = 0.65
+}
+music = {
+	name = "The soldiers answered"
+	file = "countries/prk/The soldiers answered.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Jugeumeul Mije-Chimnyakjadeurege"
+	file = "countries/prk/Jugeumeul Mije-Chimnyakjadeurege.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Aegukka"
+	file = "countries/prk/Aegukka.ogg"
+	volume = 0.65
+}
+music = {
+	name = "March of Songun Victory"
+	file = "countries/prk/March of Songun Victory.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Song of the Korean People's Army"
+	file = "countries/prk/Song of the Korean People's Army.ogg"
+	volume = 0.65
+}

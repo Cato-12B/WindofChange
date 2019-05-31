@@ -1,0 +1,18 @@
+state={
+	id=233
+	name="STATE_233"
+	provinces={
+		714 6692 9674 11664
+	}
+	history={
+		owner = SOV
+		add_core_of = KCH
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+	manpower=428795
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

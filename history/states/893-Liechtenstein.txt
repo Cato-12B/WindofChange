@@ -1,0 +1,19 @@
+state={
+	id=893
+	name="STATE_893"
+	state_category = rural
+	history=
+	{
+		owner = LIE
+		victory_points = { 13248 10 }
+		buildings = {
+			arms_factory = 1
+		}
+		add_core_of = LIE
+	}
+	provinces={
+		13248
+	}
+	manpower=38111
+	buildings_max_level_factor=1.000
+}

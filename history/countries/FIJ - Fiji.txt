@@ -1,0 +1,42 @@
+﻿capital = 636
+oob = "FIJ_1936"
+set_research_slots = 2
+set_convoys = 10
+add_political_power = 200
+set_stability = 0.8
+set_war_support = 0.1
+
+
+set_politics = {
+parties = {
+	democratic = {
+		popularity = 50
+	}
+
+	fascism = {
+		popularity = 10
+	}
+
+	communism = {
+		popularity = 20
+	}
+
+	neutrality = {
+		popularity = 20
+	}
+}
+ruling_party = democratic
+last_election = "1936.1.1"
+election_frequency = 48
+elections_allowed = no
+}
+create_country_leader = {
+	name = "Penaia Kanatabatu Ganilau"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1999.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}

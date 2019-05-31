@@ -1,0 +1,111 @@
+﻿capital = 230 #Yerevan, Armenia
+
+oob = "ARM_1939"
+
+set_research_slots = 3
+
+set_stability = 0.50
+set_war_support = 0.80
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	superior_firepower = 1
+}
+
+give_guarantee = NGK
+
+set_politics = {
+
+	parties = {
+		fascism = { 
+			popularity = 15
+		}	
+	
+		democratic = { 
+			popularity = 75
+		}
+		
+		communism = {
+			popularity = 5
+		}	
+
+		neutrality = {
+			popularity = 5
+		}
+	}
+}
+
+add_ideas = {
+	limited_conscription
+	ARM_legacy_of_genocide
+	ARM_church
+	SOV_post_soviet_state
+	ARM_corrupt_oligarchs
+	ARM_emigration
+	ARM_dashnaks_exiled
+}
+
+# DIPLOMACY
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = NGK
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = NGK
+	}
+}
+
+create_country_leader = {
+	name = "Garabid Kevorkyan"
+	desc = ""
+	picture = "Portrait_Armenia_Drastamat_Kanayan.dds"
+	expire = "1956.3.8"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Levon Ter-Petrosyan"
+	desc = ""
+	picture = "Portrait_Armenia_Levon_Ter-Petrosyan.dds"
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Aram Gaspar Sargsyan"
+	desc = ""
+	picture = "Portrait_Armenia_Hovhannes_Bagramyan.dds"
+	expire = "1982.9.21"
+	ideology = stalinism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Ashot Bagratuni"
+	desc = ""
+	picture = "Portrait_Armenia_Aram_Manukyan.dds"
+	expire = "1953.3.1"
+	ideology = despotism
+	traits = {
+	}
+}
+

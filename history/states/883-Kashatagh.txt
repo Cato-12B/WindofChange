@@ -1,0 +1,18 @@
+state={
+	id=883
+	name="STATE_883"
+	history={
+		owner = AZR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = AZR
+	}
+
+	provinces={
+		9715
+	}
+	manpower=33492
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

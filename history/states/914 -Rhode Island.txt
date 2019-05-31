@@ -1,0 +1,23 @@
+state={
+	id=914
+	name="STATE_914" # Rhode Island
+
+	state_category = city
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = USA
+		victory_points = {
+			11830 5 # Providence
+		}
+	}
+
+	provinces={
+		11830
+	}
+	manpower=980999
+	buildings_max_level_factor=1.000
+}

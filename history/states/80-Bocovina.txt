@@ -1,0 +1,22 @@
+state={
+	id=80
+	name="STATE_80"
+	manpower = 938000
+	
+	state_category = rural
+	
+	history=
+	{
+		owner = UKR
+                victory_points = {
+			577 6
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = UKR
+	}
+	provinces={
+		577 3407 9548
+	}
+}

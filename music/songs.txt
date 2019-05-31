@@ -1,0 +1,690 @@
+
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0
+		}		
+	}
+}
+
+##GENERIC
+#WIC
+#MOREGENERIC
+music = {
+	song = "WiC - Aim for the Heart"
+	chance = {
+		modifier = {
+			factor = 1
+			
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 0
+			
+			has_war = no
+
+		}	
+	}
+}
+
+music = {
+	song = "WiC - Bannons Sacrifice"
+	chance = {
+		modifier = {
+			factor = 1
+			
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 0
+			
+			has_war = no
+
+		}	
+	}
+}
+
+music = {
+	song = "WiC - World in Conflict"
+	chance = {
+		modifier = {
+			factor = 1
+			
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 0
+			
+			has_war = no
+
+		}	
+	}
+}
+
+music = {
+	song = "WiC - Trimethoxyphenethylamine"
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+
+		}	
+	}
+}
+
+music = {
+	song = "WiC - Strong Point Strongpoint"
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+
+		}	
+	}
+}
+
+music = {
+	song = "WiC - Squirrel on a Branch"
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+
+		}	
+	}
+}
+music = {
+	song = "WiC - Sniper Run"
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+
+		}	
+	}
+}
+music = {
+	song = "WiC - Shortcomings"
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+
+		}	
+	}
+}
+music = {
+	song = "WiC - Seattle Mission Start"
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 0
+			has_war = no
+
+		}	
+	}
+}
+music = {
+	song = "WiC - Percutio"
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 0
+			has_war = no
+
+		}	
+	}
+}
+music = {
+	song = "WiC - Nicole"
+	chance = {
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+music = {
+	song = "WiC - Multiplayer End"
+	chance = {
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+music = {
+	song = "WiC - Hold the Bridge"
+	chance = {
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+music = {
+	song = "WiC - Looking for Survivors"
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 0
+			has_war = no
+
+		}	
+	}
+}
+music = {
+	song = "WiC - Final Fight"
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 0
+			has_war = no
+
+		}	
+	}
+}
+music = {
+	song = "Winner None"
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 0
+			has_war = no
+
+		}	
+	}
+}
+music = {
+	song = "Terrible War"
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 0
+			has_war = no
+
+		}	
+	}
+}
+music = {
+	song = "WiC - Broken Flower"
+	 chance = {
+        factor = 1
+        modifier = {
+            factor = 0
+            has_war = no
+
+		}	
+	}
+}
+#EVW
+music = {
+	song = "East vs West - Waveform"
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+
+		}	
+	}
+}
+
+music = {
+	song = "East vs West - Water Vapour"
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+
+		}	
+	}
+}
+music = {
+	song = "East vs West - WW3"
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 0
+			has_war = no
+
+		}	
+	}
+}
+music = {
+	song = "East vs West - WW3"
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 0
+			has_war = no
+
+		}	
+	}
+}
+music = {
+	song = "East vs West - Defcon 1-Nuclear Bomb"
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 0
+			has_war = no
+
+		}	
+	}
+}
+music = {
+	song = "East vs West - Defcon 2-Weary Situation"
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+
+		}
+		modifier = {
+			factor = 0
+			has_war = no
+
+		}	
+	}
+}
+music = {
+	song = "East vs West - Tranquilite"
+	chance = {
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+music = {
+	song = "East vs West - Spanish Heart"
+	chance = {
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+music = {
+	song = "East vs West - Responsibilities"
+	chance = {
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+music = {
+	song = "East vs West - Delightful Poetry"
+	chance = {
+		modifier = {
+			factor = 1
+		}	
+	}
+}
+music = {
+	song = "Suspense"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "When It All Falls Down"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "The Flight Of The Pigeon"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "Dawn of a New Time"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "2 Minutes To Midnight"
+    chance = {
+        factor = 1
+        modifier = {
+           
+                 }		
+	}
+}
+music = {
+	song = "Nuclear"
+    chance = {
+        factor = 1
+       		 }	
+	}
+}
+music = {
+	song = "Defend the Headquarters of Revolution"
+	
+	chance = {
+		modifier = {
+			factor = 1
+				AND = {
+				tag = PRK
+				}
+				}
+		modifier = {
+            factor = 0
+			OR = {
+			AND = {
+            NOT = { tag = PRK }
+			}
+			}
+		}
+	}
+}
+music = {
+	song = "No Motherland Without You"
+	
+	chance = {
+		modifier = {
+			factor = 1
+				AND = {
+				tag = PRK
+				}
+				}
+		modifier = {
+            factor = 0
+			OR = {
+			AND = {
+            NOT = { tag = PRK }
+			}
+			}
+		}
+	}
+}
+music = {
+	song = "Dont Ask My Name"
+	
+	chance = {
+		modifier = {
+			factor = 1
+				AND = {
+				tag = PRK
+				}
+				}
+		modifier = {
+            factor = 0
+			OR = {
+			AND = {
+            NOT = { tag = PRK }
+			}
+			}
+		}
+	}
+}
+music = {
+	song = "Korea does what It is Determined to Do!"
+	
+	chance = {
+		modifier = {
+			factor = 1
+				AND = {
+				tag = PRK
+				}
+				}
+		modifier = {
+            factor = 0
+			OR = {
+			AND = {
+            NOT = { tag = PRK }
+			}
+			}
+		}
+	}
+}
+music = {
+	song = "Leader just give us your Order!"
+	
+	chance = {
+		modifier = {
+			factor = 1
+				AND = {
+				tag = PRK
+				}
+				}
+		modifier = {
+            factor = 0
+			OR = {
+			AND = {
+            NOT = { tag = PRK }
+			}
+			}
+		}
+	}
+}
+music = {
+	song = "Without a break"
+	
+	chance = {
+		modifier = {
+			factor = 1
+				AND = {
+				tag = PRK
+				}
+				}
+		modifier = {
+            factor = 0
+			OR = {
+			AND = {
+            NOT = { tag = PRK }
+			}
+			}
+		}
+	}
+}
+music = {
+	song = "One against a hundred"
+	
+	chance = {
+		modifier = {
+			factor = 1
+				AND = {
+				tag = PRK
+				}
+				}
+		modifier = {
+            factor = 0
+			OR = {
+			AND = {
+            NOT = { tag = PRK }
+			}
+			}
+		}
+	}
+}
+music = {
+	song = "The soldiers answered"
+	
+	chance = {
+		modifier = {
+			factor = 1
+				AND = {
+				tag = PRK
+				}
+				}
+		modifier = {
+            factor = 0
+			OR = {
+			AND = {
+            NOT = { tag = PRK }
+			}
+			}
+		}
+	}
+}
+music = {
+	song = "Jugeumeul Mije-Chimnyakjadeurege"
+	
+	chance = {
+		modifier = {
+			factor = 1
+				AND = {
+				tag = PRK
+				}
+				}
+		modifier = {
+            factor = 0
+			OR = {
+			AND = {
+            NOT = { tag = PRK }
+			}
+			}
+		}
+	}
+}
+music = {
+	song = "Aegukka"
+	
+	chance = {
+		modifier = {
+			factor = 1
+				AND = {
+				tag = PRK
+				}
+				}
+		modifier = {
+            factor = 0
+			OR = {
+			AND = {
+            NOT = { tag = PRK }
+			}
+			}
+		}
+	}
+}
+music = {
+	song = "March of Songun Victory"
+	
+	chance = {
+		modifier = {
+			factor = 1
+				AND = {
+				tag = PRK
+				}
+				}
+		modifier = {
+            factor = 0
+			OR = {
+			AND = {
+            NOT = { tag = PRK }
+			}
+			}
+		}
+	}
+}
+music = {
+	song = "Song of the Korean People's Army"
+	
+	chance = {
+		modifier = {
+			factor = 1
+				AND = {
+				tag = PRK
+				}
+				}
+		modifier = {
+            factor = 0
+			OR = {
+			AND = {
+            NOT = { tag = PRK }
+			}
+			}
+		}
+	}
+}

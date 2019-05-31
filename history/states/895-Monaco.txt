@@ -1,0 +1,18 @@
+state={
+	id=895
+	name="STATE_895"
+	state_category = rural
+	history = {
+		owner = MNC
+		victory_points = { 13246 10 }
+		buildings = {
+			arms_factory = 1
+		}
+		add_core_of = MNC
+	}
+	provinces={
+		13246
+	}
+	manpower=37863
+	buildings_max_level_factor=1.000
+}

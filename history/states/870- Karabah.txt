@@ -1,0 +1,25 @@
+state={
+	id=870
+	name="STATE_870"
+	history={
+		owner = AZR
+		victory_points = {
+			13206 3
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
+
+		}
+		add_core_of = NGK
+		add_claim_by = AZR
+	}
+
+	provinces={
+		13206
+	}
+	manpower=162181
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,48 @@
+﻿capital = 804
+
+oob = "CRB_1936"
+
+
+
+
+set_technology = {
+}
+
+set_research_slots = 3
+
+set_politics = {
+
+	parties = {
+		democratic = {
+			popularity = 50
+		}
+
+		fascism = {
+			popularity = 10
+		}
+
+		communism = {
+			popularity = 15
+			#banned = no #default is no
+		}
+
+		neutrality = {
+			popularity = 25
+		}
+	}
+
+	ruling_party = democratic
+	last_election = "1990.12.23"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Mate Boban"
+	desc = ""
+	picture = "gfx/leaders/leader_unknown.dds"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}

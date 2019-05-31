@@ -1,0 +1,27 @@
+
+state={
+	id=867
+	name="STATE_867"
+
+	history={
+		owner = SOS
+		victory_points = {
+			1530  3
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 3
+
+		}
+		add_core_of = SOS
+		add_core_of = GEO
+	}
+
+	provinces={
+		1530 9626
+	}
+	manpower=34484
+	buildings_max_level_factor=1.000
+	state_category=town
+}

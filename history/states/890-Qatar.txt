@@ -1,0 +1,25 @@
+state={
+	id=890
+	name="STATE_890"
+	state_category = city
+	resources={
+		oil=214
+	}
+	history=
+	{
+		owner = QAT
+		victory_points = { 8051 10 }
+		buildings = {
+			arms_factory = 1
+			8051 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = QAT
+	}
+	provinces={
+		8051
+	}
+	manpower=485114
+	buildings_max_level_factor=1.000
+}

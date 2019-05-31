@@ -1,0 +1,34 @@
+SOV_elections = {
+	SOV_elections_1 = {
+		icon = generic_form_nation
+		allowed = {
+			original_tag = SOV
+		}
+		available = {
+			is_subject = no
+		}
+		visible = {
+				original_tag = SOV
+		}
+		complete_effect = {
+        country_event = sov_elections.1
+			}
+		}
+    }
+    SOV_elections_2 = {
+      SOV_elections_2 = {
+        icon = generic_form_nation
+        allowed = {
+          original_tag = SOV
+        }
+        available = {
+          is_subject = no
+        }
+        visible = {
+            original_tag = SOV
+        }
+        complete_effect = {
+            country_event = sov_elections.2
+          }
+        }
+    }

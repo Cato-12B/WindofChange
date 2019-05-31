@@ -1,0 +1,32 @@
+﻿capital = 824
+oob = «FRA_1936»
+
+set_convoys = 20
+
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 10
+		}
+
+		fascism = {
+			popularity = 5
+		}
+		
+		communism = {
+			popularity = 35
+			#banned = no #default is no
+		}
+		
+		neutrality = { 
+			popularity = 50
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}

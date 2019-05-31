@@ -1,0 +1,21 @@
+state={
+	id=898
+	name="STATE_898"
+	resources={
+		oil=15
+	}
+	history={
+		owner = SOV
+		add_core_of = NOS
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+	provinces={
+		9628 9632 11614
+	}
+	manpower=652114
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

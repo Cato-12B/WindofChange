@@ -1,0 +1,28 @@
+state={
+	id=919
+	name="STATE_919" # Philadelphia
+	manpower = 4612222
+	
+	state_category = metropolis
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 7
+			dockyard = 5
+			air_base = 2
+			6845 = {
+				naval_base = 8
+
+			}
+		}
+		add_core_of = USA
+		victory_points = {
+			6845 20
+		}
+	}
+
+	provinces={
+		891 894 3824 3897 6845 6869 9820 11785 11799 
+	}
+}

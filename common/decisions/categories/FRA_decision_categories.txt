@@ -1,0 +1,16 @@
+################
+##### FRA ######
+################
+
+FRA_vichy_france = {
+
+	allowed = {
+		original_tag = FRA
+	}
+}
+FRA_european_union_category = {
+
+	allowed = {
+		original_tag = FRA
+	}
+}

@@ -1,0 +1,33 @@
+capital = 897 #Minsk
+
+oob = "ADY_1936"
+
+set_research_slots = 3
+
+set_politics = {
+
+	parties = {
+		democratic = {
+			popularity = 100
+			banned = yes #default is no
+		}
+
+		fascism = {
+			popularity = 0
+		}
+
+		communism = {
+			popularity = 0
+			banned = yes #default is no
+		}
+	}
+
+	ruling_party = democratic
+	last_election = "1935.1.15"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+add_ideas = {
+	SOV_post_soviet_state
+}

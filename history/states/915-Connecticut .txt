@@ -1,0 +1,33 @@
+state={
+	id=915
+	name="STATE_915" # Connecticut
+
+	state_category = large_city
+
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			dockyard = 3
+			air_base = 5
+			9832 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = USA
+		victory_points = {
+			9832 5
+		}
+
+	}
+
+	provinces={
+		6909 9832 9847 9850 
+	}
+	manpower=3194210
+	buildings_max_level_factor=1.000
+}

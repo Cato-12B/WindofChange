@@ -1,0 +1,162 @@
+ideas = {
+	
+	country = {
+
+		YUG_Crisis = {
+
+			available = {
+				has_war = no
+			}
+
+			picture = GFX_idea_dem_yug
+			
+			modifier = {
+				production_speed_arms_factory_factor = -0.3
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.10
+			}
+		}
+	
+		YUG_Kosovo_Revels = {
+
+			available = {
+				has_war = no
+			}
+			
+			modifier = {
+				stability_factor = 0.02
+			}
+		}
+	
+		YUG_National_conflict = {
+
+			available = {
+				has_war = no
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+	
+	}
+
+	political_advisor = {
+		
+		Slobodan_Milosevic = {
+			
+			
+			allowed = {
+				original_tag = "YUG"
+			}
+
+			picture = GFX_idea_slobodan
+			
+			available = {
+		
+				NOT = { has_government = democraty }
+				
+			}
+			
+
+			
+			traits = { communist_revolutionary }
+		}
+
+		Vojislav_Kostunica = {
+			
+			
+			allowed = {
+				original_tag = "YUG"
+			}
+			
+
+			
+			traits = { democratic_reformer }
+	
+			on_add = {
+				country_event = political.13
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		Kadievich_Velko = {
+		
+			allowed = {
+				original_tag = YUG
+			}
+			
+			traits = { captain_of_industry }
+		}
+	
+	}
+
+	
+	# MILITARY
+
+	army_chief = {
+
+		Ojdanic_Dragoljub = {
+			
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = YUG
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		Kadievich_Velko_mil = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = YUG
+			}
+			
+
+			
+			traits = { navy_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		Rust_Franjo = {
+			
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = YUG
+			}
+			
+
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+}

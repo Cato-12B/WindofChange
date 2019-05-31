@@ -1,0 +1,9 @@
+﻿l_russian:
+ latvia.1.t:0 "[From.GetName] предлагает [Root.GetAdjective] Участие в Балтийском Союзе"
+ latvia.1.d:0 "С подписанием договора о дружбе наших наций, [From.GetName] предложила [Root.GetName] участие в их [From.GetFactionName], чтобы объедениться от надвигающихся угроз. Кто бы то ни был, [From.GetName] обещает защищать [Root.GetAdjective] интересы."
+ latvia.1.a:0 "[Root.GetName] Вступает."
+ latvia.2.b:0 "[Root.GetName] Может сама за себя постоять."
+ latvia.2.t:0 "[From.GetName] Присоединяется к [Root.GetFactionName]!"
+ latvia.2.d:0 "Acknowledging the need for unity against the threats surrounding our countries on every side, [From.GetLeader] today announced to the world that [From.GetName] has entered a treaty with [Root.GetName] for the sake of our mutual safety."
+ latvia.2.a:0 "[Root.GetName] и [From.GetName] сегодня, как братья."
+ baltics:0 "Балтийский Союз"

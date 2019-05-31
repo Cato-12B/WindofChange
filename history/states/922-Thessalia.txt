@@ -1,0 +1,24 @@
+state={
+	id=922
+	name="STATE_922"
+	provinces={
+		863 3864 3973 6930 
+	}
+	manpower=732762
+	buildings_max_level_factor=6.000
+
+	state_category = large_city
+
+	history = {
+	    owner = GRE
+	    victory_points = {
+	        863 10
+	    }
+	    buildings = {
+	        infrastructure = 7
+	        industrial_complex = 2
+	        arms_factory = 2
+	    }
+	add_core_of = GRE    
+	}
+}

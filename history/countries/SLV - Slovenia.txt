@@ -1,0 +1,84 @@
+﻿capital = 102
+
+oob = "SLV_1991"
+
+set_technology = {
+	#speznaz_weapons = 1
+#speznaz_1 = 1
+#morsk_1 = 1
+#vdv_1 = 1
+#bmd_1 = 1
+#gornostrelok_1 = 1
+infantry_weapons = 1
+mechanised_infantry = 1
+motorised_infantry = 1
+#assembly_line = 1
+#uprav_1 = 1
+#tools_1 = 1
+#konver_1 = 1
+#oil_1 = 1
+#stal_1 = 1
+#volfram_1 = 1
+#boksit_1 = 1
+#resina_1 = 1
+#bank_1 = 1
+#stroika_1 = 1
+#research_1 = 1
+#tank = 1
+#tank_2 = 1
+#uniart = 1
+#pod_uni = 1
+#zrk_uni = 1
+#sau_1_1 = 1
+#sau_1 = 1
+#bau_1_1 = 1
+#bau_1 = 1
+#rczo_1 = 1
+#pod_ptrk_1 = 1
+#zrk_ory_1 = 1
+#pod_min_1 = 1
+#third = 1
+#stratobobr1 = 1
+#tech_support = 1
+}
+
+
+set_convoys = 180
+
+set_politics = {
+
+	parties = {
+		democratic = {
+			popularity = 84
+		}
+
+		fascism = {
+			popularity = 0
+		}
+
+		communism = {
+			popularity = 5
+
+		}
+
+		neutrality = {
+			popularity = 11
+		}
+	}
+
+	ruling_party = democratic
+	last_election = "1987.12.6"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Milan Kucan"
+	desc = "POLITICS_JIGME_WANGCHUCK_DESC"
+	picture = "gfx/leaders/balkans/Portrait_Slovenia_Milan_Kucan.dds"
+	expire = "2002.12.22"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}

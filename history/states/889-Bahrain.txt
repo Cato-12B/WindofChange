@@ -1,0 +1,22 @@
+state={
+	id=889
+	name="STATE_889"
+	state_category = city
+	resources={
+		oil=148
+	}
+	history=
+	{
+		owner = BHN
+		victory_points = { 13242 10 }
+		buildings = {
+			arms_factory = 1
+		}
+		add_core_of = BHN
+	}
+	provinces={
+		13242
+	}
+	manpower=509654
+	buildings_max_level_factor=1.000
+}

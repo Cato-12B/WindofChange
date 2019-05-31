@@ -1,0 +1,20 @@
+state={
+	id=873
+	name="STATE_873"
+	state_category = rural
+	history={
+		owner = BRN
+                victory_points = { 2220 5 }
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = BRN
+
+	}
+	provinces={
+		2220
+	}
+	manpower=11099298
+	buildings_max_level_factor=1.000
+}

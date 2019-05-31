@@ -1,0 +1,25 @@
+state=
+{
+	id=795
+	name="STATE_795"
+	manpower = 475665
+
+	state_category = town
+
+	history=
+	{
+		owner = PMR
+                victory_points = { 741 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			air_base = 2
+		}
+		add_core_of = PMR
+
+	}
+	provinces=
+	{
+          741 754 9576 }
+
+}

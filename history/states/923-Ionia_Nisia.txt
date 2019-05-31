@@ -1,0 +1,26 @@
+state={
+	id=923
+	name="STATE_923"
+	provinces={
+		1106 10203 
+	}
+	manpower=196663
+	buildings_max_level_factor=4.000
+
+	state_category = city
+
+	history = {
+	    owner = GRE
+	    victory_points = {
+	        1106 5
+	    }
+	    buildings = {
+	        infrastructure = 6
+	        dockyard = 2
+	        1106 = {
+	            naval_base = 6
+	        }
+	    add_core_of = GRE    
+	    }
+	}
+}
