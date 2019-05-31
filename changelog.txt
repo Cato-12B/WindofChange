@@ -1,9 +1,0 @@
-0.0.4.6
-	Fixed Full and medium sized flags, small flags still need to be reformatted to 32bpp
-	Fixed Turkey Ruling Party
-	Returned Zaolzie to Czechoslovakia
-	Localised and incorporated new states.
-0.0.4.7
-	Most errors fixed
-0.0.7.0
-	
