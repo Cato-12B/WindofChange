@@ -1,7 +1,7 @@
 
 # MAIN THEME
 music = {
-	name = "main_theme"
+	name = "maintheme"
 	file = "windofchange.ogg"
 	volume = 0.65
 }
