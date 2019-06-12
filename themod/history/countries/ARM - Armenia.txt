@@ -37,21 +37,12 @@ set_technology = {
 	fleet_in_being = 1
 }
 
-set_politics = {
+set_politics = {}
 
-	parties = {
-		fascism = { 
-			popularity = 34
-		}	
-	
-		democratic = { 
-			popularity = 30
-		}
-		
-		communism = {
-			popularity = 36
-		}	
-	}
+set_popularities = {
+    fascism = 34
+    democratic = 30
+    communism = 36
 }
 
 create_country_leader = {
