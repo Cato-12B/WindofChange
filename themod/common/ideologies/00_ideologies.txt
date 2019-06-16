@@ -287,40 +287,6 @@ ideologies = {
 		ai_fascist = yes # uses the fascist AI behaviour
 	}
 
-	military_junta = {
-	
-		types = {
-		
-			junta = {
-			}
-		}
-		
-		dynamic_faction_names = {
-			"FACTION_NAME_FASCIST_1"
-			"FACTION_NAME_FASCIST_2"
-			"FACTION_NAME_FASCIST_3"
-			"FACTION_NAME_FASCIST_4"
-			"FACTION_NAME_FASCIST_5"
-		}
-		
-		color = { 10 10 10 }
-		
-		war_impact_on_world_tension = 1.0			#evil!
-		faction_impact_on_world_tension = 1.0
-		
-		rules = {
-			can_force_government = yes
-			can_send_volunteers = yes
-			can_puppet = yes
-		}
-		
-		modifiers = {
-			justify_war_goal_when_in_major_war_time = -1.0
-		}
-
-		ai_fascist = yes # uses the fascist AI behaviour
-	}
-
 	islamism = {
 	
 		types = {
@@ -370,6 +336,12 @@ ideologies = {
 			
 			centrism = {
 			}
+			
+			monarchism = {
+			}
+			
+			junta = {
+			}
 		}
 
 		dynamic_faction_names = {
@@ -409,94 +381,5 @@ ideologies = {
 		can_collaborate = yes
 
 		ai_neutral = yes # 
-	}
-	
-	absolutism = {
-	
-		types = {
-		
-			monarchism  = {
-			}
-			
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_NONALIGNED_1"
-			"FACTION_NAME_NONALIGNED_2"
-			"FACTION_NAME_NONALIGNED_3"
-			"FACTION_NAME_NONALIGNED_4"
-			"FACTION_NAME_NONALIGNED_5"
-		}
-		
-		color = { 90 0 140 }
-		
-		
-		war_impact_on_world_tension = 0.25		#no major danger
-		faction_impact_on_world_tension = 0.1
-		
-		rules = {
-			can_force_government = no
-			can_puppet = yes
-			can_send_volunteers = no
-		}
-		
-		modifiers = {
-			#increased_influence_factor = 0.3 #30% easier to influence
-			generate_wargoal_tension = 0.5
-			join_faction_tension = 0.4
-			lend_lease_tension = 0.4
-			send_volunteers_tension = 0.4
-			guarantee_tension = 0.4
-			drift_defence_factor = -0.3	
-		}
-		
-		faction_modifiers = {
-		}
-
-		can_be_boosted = no
-		can_collaborate = yes
-
-		ai_neutral = yes # 
-	}
-	
-	constitutional_monarchism = {
-	
-		types = {
-		
-			c_monarchism  = {
-			}
-			
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_NONALIGNED_1"
-			"FACTION_NAME_NONALIGNED_2"
-			"FACTION_NAME_NONALIGNED_3"
-			"FACTION_NAME_NONALIGNED_4"
-			"FACTION_NAME_NONALIGNED_5"
-		}
-		
-		color = { 200 200 200 }
-		
-		
-		war_impact_on_world_tension = 0.25		#no major danger
-		faction_impact_on_world_tension = 0.1
-		
-		rules = {
-			can_force_government = no
-			can_puppet = no
-			can_send_volunteers = no
-		}
-		
-		modifiers = {
-		}
-		
-		faction_modifiers = {
-		}
-
-		can_be_boosted = no
-		can_collaborate = yes
-
-		ai_democratic = yes # 
 	}
 }

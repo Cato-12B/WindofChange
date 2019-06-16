@@ -282,7 +282,7 @@ create_import = {
 }
 
 set_politics = {	
-	ruling_party = military_junta
+	ruling_party = social_democracy
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -291,7 +291,7 @@ set_politics = {
 
 set_popularities = {
     democratic = 20
-    military_junta = 60
+    social_democracy = 60
     communism = 20
 }
 
