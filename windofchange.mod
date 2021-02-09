@@ -8,4 +8,4 @@ tags={
 	"National Focuses"
 	"Gameplay"
 }
-supported_version="1.8.*"
+supported_version="1.10.3*"
