@@ -1,1 +1,0 @@
-NOK	= "countries/North Korea.txt"

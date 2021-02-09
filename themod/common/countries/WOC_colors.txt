@@ -1,4 +1,0 @@
-NOK = {
-	color = rgb { 76 27 119 }
-	color_ui = rgb { 92 43 131 }
-}
