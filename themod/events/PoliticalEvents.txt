@@ -22,13 +22,30 @@ country_event = {
 				has_dlc = "La Resistance"
 			}
 		}
-
-		if = { 
-			limit = { 
-				#has_dlc = "BotB"#TODO
+		NOT = {
+			AND = {
+				has_dlc = "No Step Back"
+				OR = {
+					original_tag = POL
+					original_tag = EST
+					original_tag = LAT
+					original_tag = LIT
+					AND = {
+						original_tag = FIN
+						EST = { has_completed_focus = EST_national_pride_in_finland }
+					}
+				}
 			}
-			NOT = { original_tag = GRE }
-			NOT = { original_tag = TUR }
+		}
+
+		NOT = {
+			AND = {
+				has_dlc = "Battle for the Bosporus"
+				OR = {
+					original_tag = GRE
+					original_tag = TUR
+				}
+			}
 		}
 	}
 
@@ -188,12 +205,29 @@ country_event = {
 			}
 			not = { tag = USA }
 		}
-		if = { 
-			limit = { 
-				#has_dlc = "BotB"#TODO
+		NOT = {
+			AND = {
+				has_dlc = "No Step Back"
+				OR = {
+					original_tag = POL
+					original_tag = EST
+					original_tag = LAT
+					original_tag = LIT
+					AND = {
+						original_tag = FIN
+						EST = { has_completed_focus = EST_national_pride_in_finland }
+					}
+				}
 			}
-			NOT = { original_tag = GRE }
-			NOT = { original_tag = TUR }
+		}
+		NOT = {
+			AND = {
+				has_dlc = "Battle for the Bosporus"
+				OR = {
+					original_tag = GRE
+					original_tag = TUR
+				}
+			}
 		}
 	}
 
@@ -246,12 +280,29 @@ country_event = {
 			}
 			not = { tag = USA }
 		}
-		if = { 
-			limit = { 
-				#has_dlc = "BotB"#TODO
+		NOT = {
+			AND = {
+				has_dlc = "No Step Back"
+				OR = {
+					original_tag = POL
+					original_tag = EST
+					original_tag = LAT
+					original_tag = LIT
+					AND = {
+						original_tag = FIN
+						EST = { has_completed_focus = EST_national_pride_in_finland }
+					}
+				}
 			}
-			NOT = { original_tag = GRE }
-			NOT = { original_tag = TUR }
+		}
+		NOT = {
+			AND = {
+				has_dlc = "Battle for the Bosporus"
+				OR = {
+					original_tag = GRE
+					original_tag = TUR
+				}
+			}
 		}
 	}
 
@@ -371,13 +422,37 @@ country_event = {
 				has_dlc = "La Resistance"
 			}
 		}
-
-		if = { 
-			limit = { 
-				#has_dlc = "BotB"#TODO
+		NOT = {
+			AND = {
+				has_dlc = "No Step Back"
+				OR = {
+					original_tag = POL
+					original_tag = EST
+					original_tag = LAT
+					original_tag = LIT
+					AND = {
+						original_tag = FIN
+						EST = { has_completed_focus = EST_national_pride_in_finland }
+					}
+				}
 			}
-			NOT = { original_tag = GRE }
-			NOT = { original_tag = TUR }
+		}
+
+		NOT = {
+			AND = {
+				has_dlc = "Battle for the Bosporus"
+				OR = {
+					original_tag = GRE
+					original_tag = TUR
+				}
+			}
+		}
+
+		NOT = {
+			AND = {
+				has_dlc = "By Blood Alone"
+				original_tag = SWI
+			}
 		}
 	}
 
@@ -634,8 +709,23 @@ country_event = {
 				has_dlc = "La Resistance"
 			}
 		}
+		NOT = {
+			AND = {
+				has_dlc = "No Step Back"
+				OR = {
+					original_tag = POL
+					original_tag = EST
+					original_tag = LAT
+					original_tag = LIT
+					AND = {
+						original_tag = FIN
+						EST = { has_completed_focus = EST_national_pride_in_finland }
+					}
+				}
+			}
+		}
 
-		if = { 
+		if = {
 			limit = { 
 				#has_dlc = "BotB"#TODO
 			}
@@ -746,13 +836,37 @@ country_event = {
 				has_dlc = "La Resistance"
 			}
 		}
-
-		if = { 
-			limit = { 
-				#has_dlc = "BotB"#TODO
+		NOT = {
+			AND = {
+				has_dlc = "No Step Back"
+				OR = {
+					original_tag = POL
+					original_tag = EST
+					original_tag = LAT
+					original_tag = LIT
+					AND = {
+						original_tag = FIN
+						EST = { has_completed_focus = EST_national_pride_in_finland }
+					}
+				}
 			}
-			NOT = { original_tag = GRE }
-			NOT = { original_tag = TUR }
+		}
+
+		NOT = {
+			AND = {
+				has_dlc = "Battle for the Bosporus"
+				OR = {
+					original_tag = GRE
+					original_tag = TUR
+				}
+			}
+		}
+
+		NOT = {
+			AND = {
+				has_dlc = "By Blood Alone"
+					original_tag = SWI
+			}
 		}
 	}
 
@@ -802,12 +916,36 @@ country_event = {
 		NOT = { has_country_flag = democracy_opposition_formed }
 		is_puppet = no
 		NOT = { democratic > 0.59 }
-		if = { 
-			limit = { 
-				#has_dlc = "BotB"#TODO
+		NOT = {
+			AND = {
+				has_dlc = "No Step Back"
+				OR = {
+					original_tag = POL
+					original_tag = EST
+					original_tag = LAT
+					original_tag = LIT
+					AND = {
+						original_tag = FIN
+						EST = { has_completed_focus = EST_national_pride_in_finland }
+					}
+				}
 			}
-			NOT = { original_tag = GRE }
-			NOT = { original_tag = TUR }
+		}
+		NOT = {
+			AND = {
+				has_dlc = "Battle for the Bosporus"
+				OR = {
+					original_tag = GRE
+					original_tag = TUR
+				}
+			}
+		}
+
+		NOT = {
+			AND = {
+				has_dlc = "By Blood Alone"
+				original_tag = SWI
+			}
 		}
 	}
 	
@@ -842,12 +980,29 @@ country_event = {
 		NOT = { has_government = democratic }
 		has_country_flag = democracy_opposition_formed
 		NOT = { has_idea = democratic_opposition_voicing_protests }
-		if = { 
-			limit = { 
-				#has_dlc = "BotB"#TODO
+		NOT = {
+			AND = {
+				has_dlc = "No Step Back"
+				OR = {
+					original_tag = POL
+					original_tag = EST
+					original_tag = LAT
+					original_tag = LIT
+					AND = {
+						original_tag = FIN
+						EST = { has_completed_focus = EST_national_pride_in_finland }
+					}
+				}
 			}
-			NOT = { original_tag = GRE }
-			NOT = { original_tag = TUR }
+		}
+		NOT = {
+			AND = {
+				has_dlc = "Battle for the Bosporus"
+				OR = {
+					original_tag = GRE
+					original_tag = TUR
+				}
+			}
 		}
 	}
 	
@@ -1124,13 +1279,42 @@ country_event = {
 				has_dlc = "La Resistance"
 			}
 		}
-
-		if = { 
-			limit = { 
-				#has_dlc = "BotB"#TODO
+		NOT = {
+			AND = {
+				has_dlc = "No Step Back"
+				OR = {
+					original_tag = POL
+					original_tag = EST
+					original_tag = LAT
+					original_tag = LIT
+					AND = {
+						original_tag = FIN
+						EST = { has_completed_focus = EST_national_pride_in_finland }
+					}
+				}
 			}
-			NOT = { original_tag = GRE }
-			NOT = { original_tag = TUR }
+		}
+		NOT = {
+			AND = {
+				has_dlc = "By Blood Alone"
+				original_tag = SWI				
+			}
+		}
+		NOT = {
+			AND = {
+				has_dlc = "Battle for the Bosporus"
+				OR = {
+					original_tag = GRE
+					original_tag = TUR
+				}
+			}
+		}
+
+		NOT = {
+			AND = {
+				has_dlc = "By Blood Alone"
+				original_tag = SWI
+			}
 		}
 	}
 
@@ -1166,6 +1350,7 @@ country_event = {
 				ruling_party = fascism
 				ideology = democratic
 				size = 0.5
+				keep_political_leader = yes
 			}
 		}
 		if = {
@@ -1176,6 +1361,7 @@ country_event = {
 				ruling_party = fascism
 				ideology = communism
 				size = 0.5
+				keep_political_leader = yes
 			}
 		}
 		if = {
@@ -1186,6 +1372,7 @@ country_event = {
 				ruling_party = fascism
 				ideology = neutrality
 				size = 0.5
+				keep_political_leader = yes
 			}
 		}
 	}
@@ -1229,12 +1416,35 @@ country_event = {
 				has_dlc = "Man the Guns"
 			}
 		}
-		if = { 
-			limit = { 
-				#has_dlc = "BotB"#TODO
+		NOT = {
+			AND = {
+				has_dlc = "No Step Back"
+				OR = {
+					original_tag = POL
+					original_tag = EST
+					original_tag = LAT
+					original_tag = LIT
+					AND = {
+						original_tag = FIN
+						EST = { has_completed_focus = EST_national_pride_in_finland }
+					}
+				}
 			}
-			NOT = { original_tag = GRE }
-			NOT = { original_tag = TUR }
+		}
+		NOT = {
+			AND = {
+				has_dlc = "By Blood Alone"
+				original_tag = SWI				
+			}
+		}
+		NOT = {
+			AND = {
+				has_dlc = "Battle for the Bosporus"
+				OR = {
+					original_tag = GRE
+					original_tag = TUR
+				}
+			}
 		}
 		has_civil_war = no
 		check_has_focus_tree_to_switch_to_communism = yes
@@ -1278,6 +1488,7 @@ country_event = {
 				ruling_party = communism
 				ideology = democratic
 				size = 0.5
+				keep_political_leader = yes
 			}
 		}
 		if = {
@@ -1288,6 +1499,7 @@ country_event = {
 				ruling_party = communism
 				ideology = fascism
 				size = 0.5
+				keep_political_leader = yes
 			}
 		}
 		if = {
@@ -1298,6 +1510,7 @@ country_event = {
 				ruling_party = communism
 				ideology = neutrality
 				size = 0.5
+				keep_political_leader = yes
 			}
 		}
 	}
@@ -1335,12 +1548,35 @@ country_event = {
 				tag = CHI
 			}			
 		}
-		if = { 
-			limit = { 
-				#has_dlc = "BotB"#TODO
+		NOT = {
+			AND = {
+				has_dlc = "No Step Back"
+				OR = {
+					original_tag = POL
+					original_tag = EST
+					original_tag = LAT
+					original_tag = LIT
+					AND = {
+						original_tag = FIN
+						EST = { has_completed_focus = EST_national_pride_in_finland }
+					}
+				}
 			}
-			NOT = { original_tag = GRE }
-			NOT = { original_tag = TUR }
+		}
+		NOT = {
+			AND = {
+				has_dlc = "Battle for the Bosporus"
+				OR = {
+					original_tag = GRE
+					original_tag = TUR
+				}
+			}
+		}
+		NOT = {
+			AND = {
+				has_dlc = "By Blood Alone"
+				original_tag = SWI				
+			}
 		}
 		has_civil_war = no
 		check_has_focus_tree_to_switch_to_democratic = yes
@@ -1348,7 +1584,14 @@ country_event = {
 			AND = {
 				original_tag = SPR
 				has_dlc = "La Resistance"
-	}
+			}
+		}
+
+		NOT = {
+			AND = {
+				original_tag = SWI
+				has_dlc = "By Blood Alone"
+			}
 		}
 	}
 
@@ -1384,6 +1627,7 @@ country_event = {
 				ruling_party = democratic
 				ideology = neutrality
 				size = 0.5
+				keep_political_leader = yes
 			}
 		}
 		if = {
@@ -1395,6 +1639,7 @@ country_event = {
 				ruling_party = democratic
 				ideology = fascism
 				size = 0.5
+				keep_political_leader = yes
 			}
 		}
 		if = {
@@ -1406,6 +1651,7 @@ country_event = {
 				ruling_party = democratic
 				ideology = communism
 				size = 0.5
+				keep_political_leader = yes
 			}
 		}
 	}
@@ -1553,8 +1799,32 @@ country_event = {
 				}
 			}
 			AND = {
+				has_dlc = "No Step Back"
+				OR = {
+					original_tag = POL
+					original_tag = EST
+					original_tag = LAT
+					original_tag = LIT
+					original_tag = ROM
+					AND = {
+						original_tag = FIN
+						EST = { has_completed_focus = EST_national_pride_in_finland }
+					}
+					original_tag = BLR #Baltic Belarus civil war
+				}
+			}
+			AND = {
+				original_tag = SOV
+				has_global_flag = SOV_soviet_civil_war # Stalin doesn't really want to reconciliate with Trotsky/Bukharin at this point
+			}
+			AND = {
 				has_dlc = "Battle for the Bosporus"
 				original_tag = TUR
+			}
+			AND = {
+				has_dlc = "By Blood Alone"
+				original_tag = ETH
+				has_country_flag = ETH_communist_civil_war
 			}
 		}
 		any_other_country = {
@@ -1581,3 +1851,236 @@ country_event = {
 		}
 	}
 }
+#TODO_TA remove this or the on_action
+## Dispatcher event 
+#country_event = {
+#	id = political.30
+#	title = political.30.t
+#	desc = political.30.d
+#
+#	picture = GFX_report_event_journalists_speech
+#	hidden = yes 
+#	mean_time_to_happen = {
+#		days = 3
+#	}
+#	trigger = {
+#		is_subject = no
+#		NOT = { has_country_flag = yes_to_unification_flag }
+#		NOT = { has_country_flag = no_to_unification_flag }
+#		NOT = { has_country_flag = unification_request_sent_flag }
+#		any_country_with_original_tag = {
+#			original_tag_to_check = ROOT
+#			NOT = { tag = ROOT }
+#			is_subject = no
+#			has_government = ROOT
+#			has_war = no
+#			NOT = { has_country_flag = yes_to_unification_flag }
+#			NOT = { has_country_flag = no_to_unification_flag }
+#			NOT = { has_country_flag = unification_request_sent_flag }
+#		}
+#		
+#	}
+#	immediate = {
+#		LOG = "dispatcher event for [ROOT.GetName] triggered" #TODO_TA Remove logging
+#	}
+#	option = {
+#		name = political.30.a
+#		every_country = {
+#			limit = {
+#				original_tag = ROOT 
+#				is_subject = no
+#				has_government = ROOT
+#				has_war = no
+#				NOT = { has_country_flag = yes_to_unification_flag }
+#				NOT = { has_country_flag = no_to_unification_flag }
+#				NOT = { has_country_flag = unification_request_sent_flag }
+#			}
+#			set_country_flag = unification_request_sent_flag
+#			country_event = {
+#				id = political.31
+#				hours = 4 
+#				random_hours = 16 
+#			}
+#		}
+#	} 
+#
+#}
+
+# After Peace Conference, suggest unification
+country_event = {
+	id = political.31
+	title = political.31.t
+	desc = political.31.desc
+
+	picture = GFX_report_event_journalists_speech
+	is_triggered_only = yes 
+	trigger = {
+		is_subject = no
+		NOT = { has_country_flag = yes_to_unification_flag }
+		NOT = { has_country_flag = no_to_unification_flag }
+		any_country_with_original_tag = {
+			original_tag_to_check = ROOT
+			NOT = { tag = ROOT }
+			is_subject = no
+			has_government = ROOT
+			has_war = no
+		}
+	}
+	
+	immediate = {
+		# LOG = "[ROOT.GetLeader]'s [ROOT.GetName] got event" #TODO_TA Remove logging
+		IF = {
+			limit = {
+				has_global_flag = global_unification_request_sent_flag
+			}
+			clr_global_flag = global_unification_request_sent_flag
+		}
+	}
+
+	option = {
+		name = political.31.a
+		set_country_flag = yes_to_unification_flag
+		clr_country_flag = unification_request_sent_flag 
+	}
+	option = {
+		name = political.31.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = no_to_unification_flag 
+		clr_country_flag = unification_request_sent_flag
+	}
+}
+
+# Unification event
+country_event = {
+	id = political.32
+	title = political.32.t
+	desc = political.32.desc
+
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+		is_subject = no
+		has_country_flag = yes_to_unification_flag
+		any_other_country = {
+			NOT = { tag = ROOT }
+			original_tag = ROOT
+			has_country_flag = yes_to_unification_flag
+			is_subject = no
+			has_government = ROOT
+			has_war = no
+		}
+		NOT = {
+			any_other_country = {
+				original_tag = ROOT
+				has_government = ROOT
+				has_country_flag = unification_request_sent_flag
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		# LOG = "[ROOT.GetLeader]'s [ROOT.GetName] to unify countries" #TODO_TA Remove logging
+
+	}
+
+	option = {
+		name = political.32.a
+		trigger = {
+			ROOT = { is_ai = no }
+		}
+		clr_country_flag = yes_to_unification_flag 
+		clr_country_flag = unification_request_sent_flag
+		#log = "Player ROOT [ROOT.GetName] to annex"
+		every_other_country = {
+			limit = {
+				original_tag = ROOT
+				has_country_flag = yes_to_unification_flag
+				is_subject = no
+				has_government = ROOT
+				has_war = no
+			}
+			clr_country_flag = yes_to_unification_flag
+			ROOT = { annex_country = { target = PREV transfer_troops = yes } }
+		}
+		news_event = {
+			id = news.350
+			hours = 8 
+			random_hours = 8 
+		}
+	}
+	option = {
+		name = political.32.b
+		trigger = {
+			ROOT = { is_ai = yes }
+		}
+		IF = {
+			limit = {
+				any_other_country = {
+					NOT = { tag = ROOT }
+					original_tag = ROOT
+					has_country_flag = yes_to_unification_flag
+					is_subject = no
+					has_government = ROOT
+					has_war = no
+					is_ai = no 
+				}
+			}
+			log = "ai ROOT - Human player [ROOT.GetName] to annex"
+			random_other_country = {
+				limit = { 
+					NOT = { tag = ROOT }
+					original_tag = ROOT
+					has_country_flag = yes_to_unification_flag
+					is_subject = no
+					has_government = ROOT
+					has_war = no
+					is_ai = no 
+				}
+				clr_country_flag = yes_to_unification_flag 
+				clr_country_flag = unification_request_sent_flag
+				every_other_country = {
+					limit = { 
+						original_tag = ROOT
+						has_country_flag = yes_to_unification_flag
+						is_subject = no
+						has_government = ROOT
+						has_war = no
+					}
+					clr_country_flag = yes_to_unification_flag
+					PREV = { annex_country = { target = PREV transfer_troops = yes } }
+				}
+				news_event = {
+					id = news.350
+					hours = 8 
+					random_hours = 8 
+				}
+			}
+		}
+		ELSE = {
+			#log = "AI ROOT [ROOT.GetName] to annex"
+			clr_country_flag = yes_to_unification_flag 
+			clr_country_flag = unification_request_sent_flag
+			every_other_country = {
+				limit = {
+					original_tag = ROOT
+					has_country_flag = yes_to_unification_flag
+					is_subject = no
+					has_government = ROOT
+					has_war = no
+				}
+				clr_country_flag = yes_to_unification_flag
+				ROOT = { annex_country = { target = PREV transfer_troops = yes } }
+			}
+			news_event = {
+				id = news.350
+				hours = 8 
+				random_hours = 8 
+			}
+		}
+	}
+}
+	

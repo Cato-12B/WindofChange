@@ -1,6 +1,17 @@
 ﻿capital = 291
 
 oob = "IRQ_1936"
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "IRQ_1936_air_bba"
+	else = {
+		set_air_oob = "IRQ_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			CAS1 = 1
+		}
+	}
+}
 
 # Starting tech
 set_technology = {
@@ -8,10 +19,9 @@ set_technology = {
 	infantry_weapons1 = 1
 	tech_mountaineers = 1
 	gw_artillery = 1
-	early_fighter = 1
-	CAS1 = 1
 	fuel_silos = 1
 }
+
 
 if = {
 	limit = {
@@ -22,9 +32,33 @@ if = {
 
 set_convoys = 5
 
+recruit_character = IRQ_ghazi_i
+recruit_character = IRQ_rashid_ali_algaylani
+recruit_character = IRQ_yusuf_salman_yusuf
+recruit_character = IRQ_abd_almalik_ibn_hisham
+recruit_character = IRQ_taha_al_ahmani
+recruit_character = IRQ_fahmi_said
+recruit_character = IRQ_ali_mahmud_al_shaykh
+recruit_character = IRQ_iskandar_al-shami
+recruit_character = IRQ_abdullah_al-tell
+recruit_character = IRQ_mustafa_al_quidsi
+recruit_character = IRQ_hamdi_al_pachachi
+recruit_character = IRQ_fawsi_al_kaukji
+recruit_character = IRQ_khaled_al_dalabeeh
+recruit_character = IRQ_jamil_al_midfai
+recruit_character = IRQ_ali_ben_jawad
+recruit_character = IRQ_bakr_sidqi
+recruit_character = IRQ_abdullah
+recruit_character = IRQ_amir_al_illah
+recruit_character = IRQ_ali_abn_hussein
+recruit_character = IRQ_nuri_as_said
+
+
+
 1939.1.1 = {
 
 	add_political_power = 1198
+	add_command_power = 100
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -38,9 +72,14 @@ set_convoys = 5
 	complete_national_focus = production_effort
 	
 	oob = "IRQ_1939"
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "IRQ_1939_air_bba"
+		else = {
+			set_air_oob = "IRQ_1939_air_legacy"
+		}
+	}
 	set_technology = {
-		early_fighter = 1
-		CAS1 = 1
 		tech_support = 1
 		tech_recon = 1
 		infantry_weapons2 = 1
@@ -86,39 +125,6 @@ set_popularities = {
 	neutrality = 80
 }
 
-create_country_leader = {
-	name = "Ghazi I"
-	desc = "POLITICS_GHAZI_I_DESC"
-	picture = "GFX_portrait_iraq_ghazi"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Rashid Ali al-Gaylani"
-	desc = ""
-	picture = "GFX_portrait_iraq_rashid_al_gaylani"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Yusuf Salman Yusuf"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
-
 1939.1.1 = {
 	set_politics = {
 		ruling_party = neutrality
@@ -131,14 +137,7 @@ create_country_leader = {
 		neutrality = 70
 	}
 
-	create_country_leader = {
-		name = "Faisal II"
-		desc = "POLITICS_FAISAL_II_DESC"
-		picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_land_1.dds"
-		expire = "1965.1.1"
-		ideology = despotism
-		traits = {
-			#
-		}
-	}
+	recruit_character = IRQ_faisal_ii
+	promote_character = IRQ_faisal_ii
+	retire_character = IRQ_ghazi_i
 }

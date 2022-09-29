@@ -11,8 +11,10 @@
 # influence
 
 british_help_against_germany = {
+	allowed = {
+		original_tag = POL
+	}
 	enable = {
-		tag = POL
 		OR = {
 			GER = { has_completed_focus = GER_second_vienna_award }
 			GER = { has_war_with = POL }
@@ -22,26 +24,27 @@ british_help_against_germany = {
 	abort = {
 		NOT = { country_exists = ENG }
 	}
-	
+
 	ai_strategy = {
 		type = befriend
-		id = "ENG"			
+		id = "ENG"
 		value = 200
 	}
 	ai_strategy = {
 		type = alliance
-		id = "ENG"			
+		id = "ENG"
 		value = 200
-	}	
+	}
 }
 
 POL_template_design = {
-	enable = {
-	
+	allowed = {
 		original_tag = POL
-		date < 1940.1.1				
 	}
-	abort = { 
+	enable = {
+		date < 1940.1.1
+	}
+	abort = {
 		date > 1940.1.1
 	}
 
@@ -56,7 +59,7 @@ POL_template_design = {
 		id = cavalry
 		value = -100
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = light_armor
@@ -80,10 +83,26 @@ POL_template_design = {
 		id = paratroopers
 		value = -50
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = infantry
 		value = 75
+	}
+}
+
+dont_ally_germany_pls = {
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		is_historical_focus_on = yes
+		NOT = { has_government = fascism }
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "GER"
+		value = -5000
 	}
 }

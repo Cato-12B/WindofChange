@@ -77,8 +77,12 @@ focus_tree = {
 			NOT = { has_government = fascism }
 			OR = {
 				has_full_control_of_state = 796 #North Angola
-				has_full_control_of_state = 540 #South Angola
+				has_full_control_of_state = 540 #Luanda
+				has_full_control_of_state = 891 #South West Angola
+				has_full_control_of_state = 892 #Zambesi
 				has_full_control_of_state = 544 #Mozambique
+				has_full_control_of_state = 896 #Manica e Sofala
+				has_full_control_of_state = 897 #Zambeziá-Mozambique
 			}
 		}
 
@@ -117,8 +121,12 @@ focus_tree = {
 		available = {
 			OR = {
 				has_full_control_of_state = 796 #North Angola
-				has_full_control_of_state = 540 #South Angola
+				has_full_control_of_state = 540 #Luanda
+				has_full_control_of_state = 891 #Zambesi
+				has_full_control_of_state = 892 #Southwest Angola
 				has_full_control_of_state = 544 #Mozambique
+				has_full_control_of_state = 896 #Manica e Sofala
+				has_full_control_of_state = 897 #Zambezia
 			}
 		}
 
@@ -173,7 +181,21 @@ focus_tree = {
 					}
 					transfer_state = 540
 					POR = { set_country_flag = POR_released_angola_flag }
-				}								
+				}
+				if = {
+					limit = { 
+						POR = { has_full_control_of_state = 891 }
+					}
+					transfer_state = 891
+					POR = { set_country_flag = POR_released_angola_flag }
+				}	
+				if = {
+					limit = { 
+						POR = { has_full_control_of_state = 892 }
+					}
+					transfer_state = 892
+					POR = { set_country_flag = POR_released_angola_flag }
+				}							
 			}
 
 			MZB = {
@@ -184,6 +206,20 @@ focus_tree = {
 					transfer_state = 544
 					POR = { set_country_flag = POR_released_mozambique_flag }
 				}	
+				if = {
+					limit = { 
+						POR = { has_full_control_of_state = 896 }
+					}
+					transfer_state = 896
+					POR = { set_country_flag = POR_released_mozambique_flag }
+				}
+				if = {
+					limit = { 
+						POR = { has_full_control_of_state = 897 }
+					}
+					transfer_state = 897
+					POR = { set_country_flag = POR_released_mozambique_flag }
+				}
 			}
 
 			if = {
@@ -857,7 +893,7 @@ focus_tree = {
 				limit = { has_full_control_of_state = 180 }
 				180 = {
 					add_building_construction = {
-						type = infrastructure
+						type = industrial_complex
 						level = 1
 						instant_build = yes
 					}
@@ -868,32 +904,10 @@ focus_tree = {
 				limit = { has_full_control_of_state = 181 }
 				181 = {
 					add_building_construction = {
-						type = infrastructure
+						type = industrial_complex
 						level = 1
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 1	
-				}
-			}
-			if = {
-				limit = { has_full_control_of_state = 179 }
-				179 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					add_extra_state_shared_building_slots = 1	
-				}
-			}
-			if = {
-				limit = { has_full_control_of_state = 112 }
-				112 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}			
 					add_extra_state_shared_building_slots = 1	
 				}
 			}
@@ -1040,9 +1054,9 @@ focus_tree = {
 			    category = artillery
 			}
 
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = POR_advanced_artillery
-			    bonus = 1.0
+			    cost_reduction = 0.5
 			    uses = 1
 			    category = land_doctrine
 			    category = naval_doctrine
@@ -1645,9 +1659,9 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = POR_submarine_effort
-			    bonus = 1.0
+			    cost_reduction = 0.5
 			    uses = 1
 			    category = cat_trade_interdiction			   
 			}
@@ -1846,9 +1860,9 @@ focus_tree = {
 			    uses = 2
 			    category = bb_tech	   
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = POR_battleship_effort
-			    bonus = 1.0
+			    cost_reduction = 0.5
 			    uses = 1
 			    category = cat_fleet_in_being	   
 			}
@@ -1877,13 +1891,12 @@ focus_tree = {
 			    uses = 2
 			    category = cv_tech	   
 			}
-
-			add_tech_bonus = {
-				name = POR_carrier_effort
-			    bonus = 1.0
-			    uses = 1
-			    category = base_strike_main   
-			}
+			add_doctrine_cost_reduction = {
+  				name = POR_carrier_effort
+  				cost_reduction = 0.5
+  				uses = 1
+  				category = base_strike_main
+  			}
 		}
 	}
 
@@ -2360,9 +2373,9 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = POR_staff_wargames
-			    bonus = 1.0
+			    cost_reduction = 0.5
 			    uses = 2
 			    category = land_doctrine
 			}
@@ -2388,9 +2401,9 @@ focus_tree = {
 
 		completion_reward = { 
 			army_experience = 15
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = POR_field_maneuvers
-			    bonus = 1.0
+			    cost_reduction = 0.5
 			    uses = 1
 			    category = land_doctrine
 			}
@@ -2636,8 +2649,7 @@ focus_tree = {
 		id = POR_join_the_comintern
 		available = {
 			is_in_faction = no
-			SOV = { is_faction_leader = yes }
-			NOT = { has_war_with = SOV }
+			SOV_comintern_joinable = yes 
 			has_government = communism	
 		}
 
@@ -3449,9 +3461,9 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = POR_visit_the_front
-			    bonus = 1.0
+			    cost_reduction = 0.5
 			    uses = 1
 			    category = land_doctrine
 			}
@@ -4052,7 +4064,7 @@ focus_tree = {
 			}
 			create_corps_commander = {
 				name = "José Mendes dos Reis"
-				portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+				portrait_path = GFX_portrait_Jose_Mendes_dos_Reis
 				traits = { war_hero infantry_officer }
 				skill = 3
 				attack_skill = 3
@@ -4062,7 +4074,7 @@ focus_tree = {
 			}
 			create_navy_leader = {
 				name = "Armando Pereira de Castro Agatão Lança"
-				portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+				portrait_path = GFX_portrait_Armando_Pereira_de_Castro_Agatao_Lanca
 				traits = { spotter bold }
 				skill = 3
 				attack_skill = 2
@@ -4420,9 +4432,9 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = POR_observation_mission
-			    bonus = 1.0
+			    cost_reduction = 0.5
 			    uses = 1
 			    category = air_doctrine
 			}
@@ -4629,7 +4641,7 @@ focus_tree = {
 	focus = {
 		id = POR_strengthen_the_regime
 		available = {
-			has_country_leader = { name = "António de Oliveira Salazar" }
+			has_country_leader = { character = POR_antonio_de_oliveira_salazar ruling_only = yes }
 			has_manpower > 80000
 			has_equipment = { support_equipment > 799 }
 			has_equipment = { infantry_equipment > 799 }
@@ -5003,7 +5015,7 @@ focus_tree = {
 			add_war_support = 0.1
 			add_ideas = POR_national_syndicalism
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = POR_jose_hipolito_raposo_2
+			show_ideas_tooltip = POR_jose_hipolito_raposo
 			show_ideas_tooltip = POR_alberto_monsaraz
 		}
 	}
@@ -5742,21 +5754,37 @@ focus_tree = {
 			    name = POR_monarchy_party
 			}
 
-			add_popularity = {
-			    ideology = neutrality
-			    popularity = -0.20
+			hidden_effect = {
+				set_temp_variable = { dem_pop = party_popularity_100@democratic }
+				set_temp_variable = { fas_pop = party_popularity_100@fascism }
+				set_temp_variable = { neu_pop = party_popularity_100@neutrality }
+				set_temp_variable = { com_pop = party_popularity_100@communism }
+				subtract_from_temp_variable = { neu_pop = 20 }
+				add_to_temp_variable = { dem_pop = 10 }
+				add_to_temp_variable = { fas_pop = 10 }
+				set_popularities = {
+						communism = com_pop
+						democratic = dem_pop
+						fascism = fas_pop
+						neutrality = neu_pop
+					}
 			}
+			effect_tooltip = {
+				add_popularity = {
+				    ideology = neutrality
+				    popularity = -0.20
+				}
 
-			add_popularity = {
-			    ideology = democratic
-			    popularity = 0.10
+				add_popularity = {
+				    ideology = democratic
+				    popularity = 0.10
+				}
+
+				add_popularity = {
+				    ideology = fascism
+				    popularity = 0.10
+				}			
 			}
-
-			add_popularity = {
-			    ideology = fascism
-			    popularity = 0.10
-			}
-
 			add_stability = -0.20
 		}
 	}
@@ -5832,15 +5860,15 @@ focus_tree = {
 			    uses = 1
 			    category = mountaineers_tech
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = POR_assist_the_requetes
-			    bonus = 0.5
+			    cost_reduction = 0.25
 			    uses = 1
 			    category = air_doctrine
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = POR_assist_the_requetes
-			    bonus = 0.5
+			    cost_reduction = 0.25
 			    uses = 1
 			    category = land_doctrine
 			}
@@ -6066,26 +6094,23 @@ focus_tree = {
 					hidden_effect = {
 						retire_country_leader = yes
 					}
-					create_country_leader = {
-						name = "Getúlio Vargas"
-						desc = "POLITICS_GETÚLIO_VARGAS_DESC"
-						picture = "gfx/leaders/BRA/Portrait_Brazil_Getulio_Vargas.dds"
-						expire = "1954.8.24"
-						ideology = fascism_ideology
-						traits = {
-							anti_communist
-						}					
+
+					BRA_getulio_vargas = {
+						remove_country_leader_role = {
+							ideology = despotism
+						}
+						add_country_leader_role = {
+							country_leader = {
+								expire = "1954.8.24"
+								ideology = fascism_ideology
+								traits = {
+									anti_communist
+								}
+							}
+							promote_leader = yes
+						}
 					}
-					create_country_leader = {
-						name = "Arlindo Veiga dos Santos"
-						desc = "POLITICS_ARLINDO_VEIGA_DOS_SANTOS_DESC"
-						picture = "gfx/leaders/BRA/portrait_bra_arlindo_veiga_dos_santos.dds"
-						expire = "1954.8.24"
-						ideology = despotism
-						traits = {
-							staunch_monarchist
-						}					
-					}
+					promote_character = BRA_arlindo_veiga_dos_santos
 				}
 			}
 		}
@@ -6213,7 +6238,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Dom Duarte Nuno"
 				desc = "POLITICS_DOM_DUARTE_NUNO_DESC"
-				picture = "gfx/leaders/POR/portrait_por_duarte_nuno.dds"
+				picture = GFX_portrait_Dom_Duarte_Nuno
 				expire = "1976.12.24"
 				ideology = despotism
 				traits = { 

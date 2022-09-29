@@ -1,7 +1,7 @@
 particle={
 	name="snow_storm_small_file"
 	subsystem={
-		name=""
+		name="snowflake"
 		max_amount=100
 		slave_particles=0
 		sort="depth"
@@ -13,6 +13,7 @@ particle={
 		trail=no
 		local_space=no
 		billboard=yes
+		hide=no
 		texture={
 			file="gfx/particles/snowflake.dds"
 			x=1
@@ -44,7 +45,7 @@ particle={
 		force=chaos
 	}
 	subsystem={
-		name=""
+		name="snow"
 		max_amount=70
 		slave_particles=0
 		emitter_type="sphere"
@@ -55,6 +56,7 @@ particle={
 		trail=no
 		local_space=no
 		billboard=yes
+		hide=no
 		texture={
 			file="gfx/particles/snow.dds"
 			x=1
@@ -87,7 +89,7 @@ particle={
 		force=sidewind,chaos
 	}
 	subsystem={
-		name=""
+		name="snowcloud"
 		max_amount=0
 		slave_particles=0
 		emitter_type="sphere"
@@ -98,8 +100,9 @@ particle={
 		trail=no
 		local_space=no
 		billboard=yes
+		hide=no
 		texture={
-			file="gfx/particles/snow_cloud.dds"
+			file="gfx/particles/dust_streaks.dds"
 			x=1
 			y=1
 			shader="ParticleAlphaBlend"
@@ -108,28 +111,28 @@ particle={
 			x=255.000
 			y=255.000
 			z=255.000
-			alpha=25.000,smoke_fade
+			alpha={ 120.000,smoke_fade 20.000 }
 		}
 		position={
 			x=0.000
 			y=25.000
-			z=6.000
 		}
 		start=0.000
 		duration=-1.000
-		emitter_yaw={ 0.000 0.000 }
-		emitter_pitch={ 0.000 0.000 }
+		emitter_yaw=0.000
+		emitter_pitch=0.000
 		velocity_pitch={ -10.000 0.000 }
 		velocity_yaw={ 90.000 0.000 }
 		velocity={ 10.000 6.000 }
-		life={ 1.500 0.600 }
+		life={ 3.000 0.600 }
 		emission=7.000
 		size={ 30.500 10.000 }
-		rotation={ 0.000 0.000 }
-		force=chaos
+		particle_pitch=90.000
+		rotation={ 90.000 0.000 }
+		force=sidewind
 	}
 	subsystem={
-		name=""
+		name="snowcloud2"
 		max_amount=0
 		slave_particles=0
 		emitter_type="sphere"
@@ -139,6 +142,7 @@ particle={
 		trail=no
 		local_space=no
 		billboard=no
+		hide=no
 		texture={
 			file="gfx/particles/cloud_2.dds"
 			x=1
@@ -172,7 +176,7 @@ particle={
 		minValue=0.000
 		maxValue=1.000
 		curve={
-			0.000 0.100 0.100 1.000 0.800 1.000 1.000 0.000 
+			0.000 0.000 0.100 1.000 0.800 1.000 1.000 0.000 
 		}
 		op="MUL"
 		time="life"
@@ -185,7 +189,7 @@ particle={
 		minValue=0.000
 		maxValue=1.000
 		curve={
-			0.000 0.100 0.300 1.000 0.800 1.000 1.000 0.000 
+			0.000 0.000 0.300 1.000 0.800 1.000 1.000 0.000 
 		}
 		op="MUL"
 		time="life"

@@ -144,12 +144,12 @@ posteffect_values = {
 	#lut = "gfx/world/colorcorrection_green_night.tga"
 	lut = "gfx/world/colorcorrection_green_night3.tga"
 	tonemap_middlegrey = 0.7
-	BLOOM_WIDTH = 20
+	BLOOM_WIDTH = 2.0
 	BLOOM_SCALE = 1.5
 	BRIGHT_THRESHOLD = 0.8
 	
 	hdr_min_adjustment = 0.8
-	hdr_max_adjustment = 0.4
+	hdr_max_adjustment = 0.6
 	
 	#MIN_HDR_ADJUSTMENT = 0.5,     --0.18 0.7  how it adapts to dark areas, smaller value -> more nightvision
 	#MAX_HDR_ADJUSTMENT = 1.0,      --0.8 0.8  opposite of the above, how it adapts to bright areas, really high value will reduce chance to be "blinded"

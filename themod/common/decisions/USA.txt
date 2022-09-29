@@ -414,7 +414,9 @@ war_measures = {
 	}
 	USA_CSA_set_up_provisional_government = { 
 
-		
+		allowed = {
+			original_tag = CSA
+		}
 		available = {
 			any_controlled_state = {
 				is_core_of = USA
@@ -716,7 +718,7 @@ war_measures = {
 			factor = 1
 			modifier = {
 				has_equipment = {
-					fighter_equipment < 1
+					small_plane_airframe < 1
 				}
 				factor = 5
 			}
@@ -732,12 +734,44 @@ war_measures = {
 			add_to_variable = { USB.USB_factories_available = -6 }
 			USB = {
 				add_offsite_building = { type = industrial_complex level = 5 }
+				if = {
+					limit = {
+						has_dlc = "By Blood Alone"
+						NOT = { has_country_flag = USB_fighter_template_active }
+					}
+					create_equipment_variant = {
+						name = "P-44 Bald Eagle" #
+						type = small_plane_airframe_1
+						modules = {
+							fixed_main_weapon_slot = heavy_mg_4x
+							fixed_auxiliary_weapon_slot_1 = bomb_locks
+							engine_type_slot = engine_2_1x
+						}
+					}
+					set_country_flag = USB_fighter_template_active
+				}
 			}
 		}
 		remove_effect = {
-			add_equipment_to_stockpile = {
-				type = fighter_equipment
-				amount = 50
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "By Blood Alone"
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_1
+					amount = 50
+					producer = USB
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_1
+					amount = 50
+					producer = "USB"
+					variant_name = "P-44 Bald Eagle"
+				}
 			}
 			USB = {
 				add_offsite_building = { type = industrial_complex level = -5 }
@@ -773,7 +807,7 @@ war_measures = {
 			factor = 1
 			modifier = {
 				has_equipment = {
-					tac_bomber_equipment < 1
+					medium_plane_airframe < 1
 				}
 				factor = 5
 			}
@@ -789,12 +823,43 @@ war_measures = {
 			add_to_variable = { USB.USB_factories_available = -6 }
 			USB = {
 				add_offsite_building = { type = industrial_complex level = 5 }
+				if = {
+					limit = {
+						has_dlc = "By Blood Alone"
+						NOT = { has_country_flag = USB_bomber_template_active }
+					}
+					create_equipment_variant = {
+						name = "B-13 Raven" #
+						type = medium_plane_airframe_1
+						modules = {
+							fixed_main_weapon_slot = medium_bomb_bay
+							fixed_auxiliary_weapon_slot_1 = bomb_locks
+							engine_type_slot = engine_2_2x
+							special_type_slot_1 = lmg_defense_turret
+						}
+					}
+					set_country_flag = USB_bomber_template_active
+				}
 			}
 		}
 		remove_effect = {
-			add_equipment_to_stockpile = {
-				type = tac_bomber_equipment
-				amount = 25
+			if = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				add_equipment_to_stockpile = {
+					type = tac_bomber_equipment_1
+					amount = 25
+					producer = USB
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = medium_plane_airframe_1
+					amount = 25
+					producer = "USB"
+					variant_name = "B-13 Raven"
+				}
 			}
 			USB = {
 				add_offsite_building = { type = industrial_complex level = -5 }
@@ -813,7 +878,7 @@ USA_aid_britain = {
 		}
 
 		available = {
-			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
+			has_country_leader = { ruling_only = yes character = USA_franklin_delano_roosevelt }
 			has_country_flag = blood_toil_tears_sweat_speech
 			ENG = { has_defensive_war = yes }
 		}
@@ -852,7 +917,7 @@ USA_aid_britain = {
 		}
 
 		available = {
-			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
+			has_country_leader = { ruling_only = yes character = USA_franklin_delano_roosevelt }
 			has_country_flag = fight_on_the_beaches_speech
 			ENG = { has_defensive_war = yes }
 		}
@@ -895,7 +960,7 @@ USA_aid_britain = {
 		}
 
 		available = {
-			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
+			has_country_leader = { ruling_only = yes character = USA_franklin_delano_roosevelt }
 			has_country_flag = this_was_their_finest_hour_speech
 			ENG = { has_defensive_war = yes }
 		}
@@ -943,7 +1008,7 @@ USA_aid_britain = {
 		}
 
 		available = {
-			has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }
+			has_country_leader = { ruling_only = yes character = USA_franklin_delano_roosevelt }
 			has_country_flag = mers_el_kebir_raid
 			ENG = { has_defensive_war = yes }
 		}
@@ -1349,7 +1414,7 @@ USA_honor_the_confederacy = {
 		fire_only_once = yes
 		complete_effect = {
 			add_stability = 0.1
-			set_capital = 362
+			set_capital = { state = 362 }
 			add_popularity = { ideology = fascism popularity = 0.05 }
 			if = {
 				limit = {
@@ -1518,9 +1583,9 @@ foreign_politics = {
 
 		available = {
 			OR = {
-				not = { has_government = communism }
+				not = { has_government = SOV }
 				has_war_with = SOV #commie on commie violence
-			}
+			}			
 			has_equipment = { infantry_equipment > 999 }
 			FROM = {
 				has_war_with = SOV
@@ -1543,9 +1608,11 @@ foreign_politics = {
 
 		visible = {
 			has_completed_focus = USA_anti_bolshevist_aid
+			
 			FROM = {
 				has_war_with = SOV
 			}
+			SOV = { has_civil_war = no }
 		}
 
 		cost = 25
@@ -1961,7 +2028,7 @@ USA_war_plans = {
 	USA_execute_war_plan_white = {
 		icon = generic_operation
 		available = {
-			has_war_with = SOV
+			has_war_with = SOU
 		}
 		visible = {
 			has_completed_focus = USA_war_plan_white
@@ -1972,7 +2039,7 @@ USA_war_plans = {
 		fire_only_once = yes
 		days_remove = 180
 		targeted_modifier = {
-			tag = SOV
+			tag = SOU
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}

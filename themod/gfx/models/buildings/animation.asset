@@ -48,3 +48,8 @@ animation = {
 	name = "artillery_frame_attack_animation"
 	file = "artillery_frame_attack.anim"
 }
+
+animation = {
+	name = "floating_harbor_idle_animation"
+	file = "floating_harbor_idle.anim"
+}
